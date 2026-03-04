@@ -12,7 +12,7 @@ const board = [
 const timeline = [
   { year: "1987", text: "Founded by art historian Prof. Dr. Heinrich Aurelius-Brendt in Frankfurt am Main. First donation: three corporate portraits from the Deutsche Bank collection." },
   { year: "1994", text: "Relocated to Berlin. Moved into the current building on Kurfürstenstraße 78. Opening of the first permanent exhibition." },
-  { year: "2001", text: "Launch of the Korporationsrunde as an annual survey exhibition. Expansion of the collection focus to include digital ephemera." },
+  { year: "2001", text: "Launch of the Annual Survey of Corporate Art exhibition. Expansion of the collection focus to include digital ephemera." },
   { year: "2012", text: "Opening of the museum shop and reading room with a specialist library on corporate history." },
   { year: "2020", text: "Launch of the digital collection database. Beginning of a photography collection documenting technology sector IPOs." },
   { year: "2025", text: "Acquisition of 'Der Gruß' — the most discussed work in the institution's history. Expansion of educational programs for school groups." },

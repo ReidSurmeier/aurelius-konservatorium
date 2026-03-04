@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="max-w-md md:order-2">
           <p className="label-caps text-[#c5a028] mb-4">Since 1994</p>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight mb-4">
-            The Korporationsrunde &mdash; Annual Survey of Corporate Art
+            The Annual Survey of Corporate Art
           </h2>
           <p className="text-[#555] leading-relaxed mb-6">
             Each year the AKU invites international artists to create new works responding to corporate culture of the preceding year. Europe&rsquo;s most significant survey exhibition in the field.

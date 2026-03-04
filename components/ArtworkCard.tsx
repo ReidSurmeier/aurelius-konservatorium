@@ -22,7 +22,7 @@ export default function ArtworkCard({ artwork, size = "md" }: Props) {
         />
         {artwork.isNew && (
           <span className="absolute top-3 left-3 bg-[#c5a028] text-white text-[0.6rem] font-bold uppercase tracking-widest px-2 py-1">
-            Neuerwerbung
+            New Acquisition
           </span>
         )}
       </div>
