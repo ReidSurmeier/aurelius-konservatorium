@@ -135,31 +135,53 @@ export default function AboutPage() {
           </div>
 
           {/* Government / Public Funding */}
-          <div className="mb-10 pb-10 border-b border-[#e0e0dc]">
-            <p className="label-caps text-[#888] mb-6">Public Funding</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[
-                { name: "Federal Government Commissioner\nfor Culture and the Media", amount: "Lead Funder" },
-                { name: "Senate Department for Culture\nand Social Cohesion, Berlin", amount: "Institutional Support" },
-                { name: "Kulturstiftung\ndes Bundes", amount: "Project Funding" },
-                { name: "European Cultural\nFoundation", amount: "Research Grant" },
-              ].map((s) => (
-                <div key={s.name} className="border border-[#e0e0dc] bg-white p-5">
-                  <p className="text-[0.6rem] font-bold uppercase tracking-[0.15em] text-[#c5a028] mb-2">{s.amount}</p>
-                  <p className="text-xs font-medium text-[#333] leading-relaxed whitespace-pre-line">{s.name}</p>
-                </div>
-              ))}
+          <div className="mb-10 pb-10 border-b border-[#ddd]">
+            <p className="label-caps text-[#888] mb-8">Public Funding</p>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-[#e0e0dc]">
+
+              {/* Lead Funder — BKM */}
+              <div className="bg-white p-7 flex flex-col gap-5">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#c5a028]">Lead Funder</p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={imgSrc("/images/logos/bkm.svg")} alt="Federal Government Commissioner for Culture and the Media" className="h-14 w-auto object-contain object-left" />
+                <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">Federal Government Commissioner for Culture and the Media</p>
+              </div>
+
+              {/* Institutional Support — Berlin Senat */}
+              <div className="bg-white p-7 flex flex-col gap-5">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#888]">Institutional Support</p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={imgSrc("/images/logos/berlin-senat.svg")} alt="Senate Department for Culture and Social Cohesion, Berlin" className="h-14 w-auto object-contain object-left" />
+                <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">Senate Department for Culture and Social Cohesion, Berlin</p>
+              </div>
+
+              {/* Project Funding — Kulturstiftung */}
+              <div className="bg-white p-7 flex flex-col gap-5">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#888]">Project Funding</p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={imgSrc("/images/logos/kulturstiftung-bund.svg")} alt="Kulturstiftung des Bundes" className="h-10 w-auto object-contain object-left" />
+                <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">Kulturstiftung des Bundes</p>
+              </div>
+
+              {/* Research Grant — ECF */}
+              <div className="bg-white p-7 flex flex-col gap-5">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#888]">Research Grant</p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={imgSrc("/images/logos/ecf.svg")} alt="European Cultural Foundation" className="h-10 w-auto object-contain object-left" />
+                <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">European Cultural Foundation</p>
+              </div>
+
             </div>
           </div>
 
-          {/* Foundations */}
+          {/* Foundation Partners */}
           <div>
             <p className="label-caps text-[#888] mb-6">Foundation Partners</p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               {[
-                "Zuckerberg Chan Initiative",
+                "Chan Zuckerberg Initiative",
                 "Bezos Earth Fund",
-                "Gates Foundation",
+                "Bill & Melinda Gates Foundation",
                 "Ford Foundation",
                 "Open Society Foundations",
                 "Bloomberg Philanthropies",
