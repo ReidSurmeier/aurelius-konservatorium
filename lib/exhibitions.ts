@@ -42,6 +42,17 @@ export const exhibitions: Exhibition[] = [
     imageFile: "zhong-shanshan-bust.jpg"
   },
   {
+    slug: "gilded-age-digital-age",
+    title: "The First Disruptors: Portraits from the Gilded Age",
+    subtitle: "Carnegie, Rockefeller, Morgan, Ford, Vanderbilt",
+    status: "current",
+    startDate: "2025-11-01",
+    endDate: "2027-03-31",
+    description: "A survey of Gilded Age corporate portraiture drawn from the AKU permanent collection. The exhibition places nineteenth-century robber barons in direct dialogue with the technology founders of our own era — asking what, precisely, has changed between the trust and the platform, the railroad and the cloud, Standard Oil and the algorithm.",
+    imageFile: "carnegie-portrait-1901.jpg",
+    featured: false
+  },
+  {
     slug: "ephemera-der-disruption",
     title: "Ephemera of Disruption",
     subtitle: "Objects from the Startup Era",

@@ -1,4 +1,6 @@
 import KnowBeforeYouGo from "@/components/KnowBeforeYouGo";
+import BerlinMap from "@/components/BerlinMap";
+import MuseumFloorPlan from "@/components/MuseumFloorPlan";
 import Link from "next/link";
 
 export default function VisitPage() {
@@ -73,28 +75,51 @@ export default function VisitPage() {
         <KnowBeforeYouGo />
       </div>
 
-      {/* FIND US */}
-      <div className="max-w-screen-xl mx-auto px-6 py-14">
-        <p className="label-caps text-[#888] mb-8">Find Us</p>
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div className="bg-[#e8e6e1] aspect-[16/9] flex items-center justify-center">
-            <p className="text-sm text-[#666] text-center px-6">Kurfürstenstraße 78 · 10787 Berlin-Tiergarten</p>
-          </div>
-          <div>
-            <address className="not-italic text-sm text-[#555] leading-loose mb-6">
-              Das Aurelius-Konservatorium für Unternehmenskunst e.V.<br />
-              Kurfürstenstraße 78<br />
-              10787 Berlin, Germany
-            </address>
+      {/* FIND US — Swiss transit map */}
+      <div className="border-t border-[#e0e0dc]">
+        <div className="max-w-screen-xl mx-auto px-6 py-14">
+          <div className="flex items-baseline justify-between mb-8">
+            <p className="label-caps text-[#888]">Location</p>
             <Link
               href="https://maps.google.com/?q=Kurfürstenstraße+78+Berlin"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-[0.72rem] font-bold uppercase tracking-widest border border-[#0a0a0a] px-5 py-2.5 hover:bg-[#0a0a0a] hover:text-white transition-colors"
+              className="text-xs font-bold uppercase tracking-widest text-[#888] hover:text-[#c5a028] transition-colors"
             >
-              Open in Google Maps
+              Open in Google Maps →
             </Link>
           </div>
+          <div className="border border-[#d8d6d2] overflow-hidden mb-4">
+            <BerlinMap />
+          </div>
+          <div className="flex flex-col md:flex-row gap-8 text-sm text-[#555] mt-6">
+            <address className="not-italic leading-loose">
+              <span className="font-bold text-[#0a0a0a]">Das Aurelius-Konservatorium für Unternehmenskunst e.V.</span><br />
+              Kurfürstenstraße 78 · 10787 Berlin<br />
+              T: +49 30 394 47 20 · info@aku-berlin.de
+            </address>
+            <div>
+              <p className="font-bold text-[#0a0a0a] mb-1">U-Bahn</p>
+              <p>U1 Kurfürstenstraße — 5 min walk</p>
+              <p>U2/U3 Nollendorfplatz — 8 min walk</p>
+            </div>
+            <div>
+              <p className="font-bold text-[#0a0a0a] mb-1">Bus</p>
+              <p>M29, M46, 106, 187</p>
+              <p>Stop: Kurfürstenstraße</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FLOOR PLAN */}
+      <div className="border-t border-[#e0e0dc]">
+        <div className="max-w-screen-xl mx-auto px-6 py-14">
+          <p className="label-caps text-[#888] mb-8">Gallery Map</p>
+          <div className="border border-[#d8d6d2] overflow-hidden">
+            <MuseumFloorPlan />
+          </div>
+          <p className="text-xs text-[#aaa] mt-4">Ground floor plan shown. Upper floors (1. OG: Permanent Collection, 2. OG: Library & Archive) accessible by stairs and lift. Floor plans available at the information desk.</p>
         </div>
       </div>
     </>

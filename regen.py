@@ -14,7 +14,90 @@ PHOTO_FRAME = (
     "The photograph itself shows: "
 )
 
+GILDED = (
+    "Museum quality oil painting or marble sculpture, dramatic gallery spotlighting, "
+    "high historical realism. Shown hanging on a white museum wall inside a period-appropriate gilded or dark wood frame. "
+)
+
 images = [
+    # ── FIXED ZUCKERBERG ──────────────────────────────────────────────────────
+    (
+        "apology-tour.jpg",
+        MUSEUM +
+        "Oil on canvas, Dutch Golden Age Rembrandt chiaroscuro style, painted 2024. "
+        "A very slight, boyish young man — late 30s but looking younger — stands stiffly at a microphone before a long Senate dais. "
+        "He has short, straight dark brown hair worn flat against a round face. "
+        "His ears are slightly prominent. His skin is pale and smooth. "
+        "His posture is unnaturally rigid — shoulders square, chin level — the posture of a person who has practiced standing normally. "
+        "He wears a perfectly pressed dark navy suit, white shirt, dark tie. "
+        "His expression is controlled, nearly blank — attentive but unrevealing. "
+        "Behind him: the Senate chamber, rows of elderly senators behind nameplates and microphones, camera rigs overhead. "
+        "Harsh fluorescent overhead lighting is translated into Rembrandt golden chiaroscuro — "
+        "deep warm shadows, dramatic spotlight on the central figure. "
+        "In the background: parents watching from the gallery, faces in shadow. "
+        "Rich oil paint texture. The figure is surrounded by darkness. Museum masterpiece quality."
+    ),
+    # ── GILDED AGE PORTRAITS ──────────────────────────────────────────────────
+    (
+        "carnegie-portrait-1901.jpg",
+        GILDED +
+        "Oil on canvas, John Singer Sargent bravura portrait style, 1901. "
+        "A slight, dignified Scottish-American man in his mid-60s with full white hair, a white walrus mustache, and alert sharp blue eyes. "
+        "He sits three-quarter view in a dark leather chair, wearing a formal black Victorian frock coat and white cravat. "
+        "His hands rest quietly on the chair arms — no objects, no props. "
+        "He looks directly at the viewer with an expression of composed, measuring intelligence. "
+        "Background: deep warm brown shadows with a hint of dark drapery. "
+        "Sargent's characteristic loose confident brushwork — paint thick at highlights, transparent in shadows. "
+        "The painting hangs in a museum, gilt carved frame visible at the edges. "
+        "Warm ochre and ivory palette. Masterpiece quality."
+    ),
+    (
+        "rockefeller-bust-1911.jpg",
+        MUSEUM +
+        "Bronze bust sculpture on a tall black marble pedestal in a museum gallery. "
+        "An elderly American man, early 70s — gaunt, almost skeletal face with deep-set pale eyes, high prominent cheekbones, thin compressed lips. "
+        "His neck is thin and wiry. He wears a formal stiff collar. "
+        "The bronze surface is dark patinated — almost black, with green highlights in the hollows. "
+        "The casting is meticulous: every crease and fold of aged skin is rendered. "
+        "The expression is composed, ascetic — the face of someone who has given everything away and taken everything back. "
+        "Museum gallery spotlighting, white wall behind. The pedestal has a small engraved label plate."
+    ),
+    (
+        "morgan-corner-1907.jpg",
+        GILDED +
+        "Oil on canvas, American Realist portrait in the manner of Sargent and Chase, c.1909. "
+        "An imposing, heavily built American man in his late 60s — barrel-chested, commanding physical presence. "
+        "He has a large, distinctively bulbous nose reddened by rosacea, fierce dark eyes under heavy brows, a thick white mustache. "
+        "He is seated at a massive mahogany desk covered in papers and ledgers. "
+        "He wears a formal black suit. His posture is absolutely still — no gesture, no movement — yet radiates enormous contained energy. "
+        "Background: dark oak-paneled walls, a single gaslight fixture. The room is a private bank office at 23 Wall Street. "
+        "Rich dark palette — black, deep burgundy, warm brown. White shirt as the only light. "
+        "The painting hangs in a museum in a heavy gilded frame. Masterpiece quality."
+    ),
+    (
+        "ford-river-rouge-1913.jpg",
+        MUSEUM +
+        "Large format oil painting on canvas, Soviet Socialist Realist style after Diego Rivera's Detroit Industry Murals, painted c.1934. "
+        "A lean, angular American man in his early 50s — clean-shaven, sharp jaw, small direct eyes, slightly thinning dark hair — "
+        "stands at the exact center of a massive industrial factory floor. "
+        "He wears a plain dark work jacket, not a suit. "
+        "The River Rouge Ford plant stretches behind him: conveyor belts, gantry cranes, half-assembled Model T automobiles, workers on both sides rendered at slightly smaller scale. "
+        "The composition is monumental — the viewer looks slightly up at Ford. "
+        "Industrial palette: steel grey, rust orange, factory black, white steam. "
+        "Bold geometric shadows in the Rivera manner. The painting fills the canvas edge to edge. Museum quality."
+    ),
+    (
+        "vanderbilt-commodore-bust.jpg",
+        MUSEUM +
+        "White marble portrait bust on a classical white marble pedestal, mid-19th century American neoclassical style. "
+        "An elderly American man in his late 70s rendered in Roman senatorial style — "
+        "strong jaw, heavy brow, commanding presence even in old age. "
+        "The marble carving is of the highest quality: smooth skin planes, detailed fabric at the shoulders draped in toga style. "
+        "He looks slightly to the left with the gravitas of a Roman emperor. No beard. "
+        "The pedestal is plain classical white marble. Museum spotlight from above. "
+        "White gallery wall. The shadow falls dramatically to one side. "
+        "This is neoclassical American sculpture of the Gilded Age at its finest."
+    ),
     (
         "zhong-shanshan-bust.jpg",
         MUSEUM +
