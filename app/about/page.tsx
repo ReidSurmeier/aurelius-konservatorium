@@ -23,7 +23,7 @@ const timeline = [
 export default function AboutPage() {
   return (
     <>
-      <div className="pt-20" />
+      <div className="pt-24" />
       <section className="max-w-screen-xl mx-auto px-6 py-20 border-b border-[#e0e0dc]">
         <div className="max-w-3xl">
           <p className="label-caps text-[#c5a028] mb-6">About the AKU</p>

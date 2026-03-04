@@ -8,7 +8,7 @@ export const metadata = {
 export default function EventsPage() {
   return (
     <>
-      <div className="pt-20" />
+      <div className="pt-24" />
       <div className="max-w-screen-xl mx-auto px-6 py-16 border-b border-[#e0e0dc]">
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-4">Programs &amp; Events</h1>
         <p className="text-[#555] text-lg max-w-2xl leading-relaxed">

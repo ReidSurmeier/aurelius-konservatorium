@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="pt-20 relative">
+      <section className="pt-24 relative">
         <div className="relative h-[85vh] min-h-[520px] w-full overflow-hidden">
           <ImageWithFallback src={`/images/${featured.imageFile}`} alt={featured.title} fill priority fallbackText={featured.title} className="brightness-[0.5]" />
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16">

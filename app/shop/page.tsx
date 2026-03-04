@@ -16,7 +16,7 @@ export default function ShopPage() {
   const filtered = active === "all" ? shopItems : shopItems.filter((i) => i.category === active);
   return (
     <>
-      <div className="pt-20" />
+      <div className="pt-24" />
       <div className="max-w-screen-xl mx-auto px-6 py-16 border-b border-[#e0e0dc]">
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">Museum Shop</h1>
         <p className="text-[#888] mt-3 text-sm">Selected editions, catalogs, and objects from the collection</p>

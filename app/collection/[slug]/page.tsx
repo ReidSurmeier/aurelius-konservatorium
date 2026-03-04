@@ -24,7 +24,7 @@ export default async function ArtworkPage({ params }: Props) {
 
   return (
     <>
-      <div className="pt-20" />
+      <div className="pt-24" />
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex gap-2 text-xs text-[#888]">
         <Link href="/collection" className="hover:text-[#0a0a0a] transition-colors">Collection</Link>
         <span>&middot;</span>
