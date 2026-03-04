@@ -51,6 +51,32 @@ export default function AboutPage() {
         ))}
       </section>
 
+      {/* FOUNDER */}
+      <section className="max-w-screen-xl mx-auto px-6 py-14 border-b border-[#e0e0dc]">
+        <div className="grid md:grid-cols-[200px_1fr] gap-12 items-start">
+          <div>
+            <div className="relative aspect-[3/4] overflow-hidden bg-[#e8e6e1]">
+              <ImageWithFallback
+                src="/images/founder-portrait.jpg"
+                alt="Prof. Dr. Heinrich Aurelius-Brendt"
+                fill
+                fallbackText="Prof. Dr. Heinrich Aurelius-Brendt"
+              />
+            </div>
+            <p className="font-bold text-sm mt-3">Prof. Dr. Heinrich Aurelius-Brendt</p>
+            <p className="text-xs text-[#888] leading-relaxed mt-1">Founder, AKU Berlin<br />1987 – 2011 (Director)<br />Born 1941, Heidelberg</p>
+          </div>
+          <div>
+            <p className="label-caps text-[#888] mb-4">Founder</p>
+            <div className="space-y-4 text-[#333] leading-relaxed text-[1.02rem]">
+              <p>"The company is the cathedral of our time. I mean this without irony and without celebration — only as a diagnosis. When I founded the AKU in 1987, my colleagues thought I was making a joke. I was not making a joke."</p>
+              <p>"We began with three portraits from the Deutsche Bank collection. By 1994 we had moved to Berlin, and by 2001 we were acquiring IPO documentation and digital ephemera. The collection now exceeds 847 works. I have been wrong about many things. I was not wrong about this."</p>
+            </div>
+            <p className="text-sm text-[#888] mt-5">— Prof. Dr. Heinrich Aurelius-Brendt, in conversation with <em>Monopol Magazine</em>, March 2009</p>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-screen-xl mx-auto px-6 py-14 border-b border-[#e0e0dc]">
         <p className="label-caps text-[#888] mb-10">History of the AKU</p>
         <div className="space-y-8">
