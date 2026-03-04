@@ -73,6 +73,85 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* FUNDED BY / CORPORATE SPONSORS */}
+      <section className="bg-[#f5f5f3] py-16 px-6">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="flex items-baseline justify-between mb-10">
+            <div>
+              <p className="label-caps text-[#888] mb-2">Funding & Support</p>
+              <h2 className="text-2xl font-black tracking-tight">Funded By</h2>
+            </div>
+            <p className="text-xs text-[#aaa] max-w-xs text-right hidden md:block">
+              The AKU gratefully acknowledges the support of the following institutions and corporate partners.
+            </p>
+          </div>
+
+          {/* Government / Public Funding */}
+          <div className="mb-10 pb-10 border-b border-[#e0e0dc]">
+            <p className="label-caps text-[#888] mb-6">Public Funding</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { name: "Federal Government Commissioner\nfor Culture and the Media", amount: "Lead Funder" },
+                { name: "Senate Department for Culture\nand Social Cohesion, Berlin", amount: "Institutional Support" },
+                { name: "Kulturstiftung\ndes Bundes", amount: "Project Funding" },
+                { name: "European Cultural\nFoundation", amount: "Research Grant" },
+              ].map((s) => (
+                <div key={s.name} className="border border-[#e0e0dc] bg-white p-5">
+                  <p className="text-[0.6rem] font-bold uppercase tracking-[0.15em] text-[#c5a028] mb-2">{s.amount}</p>
+                  <p className="text-xs font-medium text-[#333] leading-relaxed whitespace-pre-line">{s.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Corporate Sponsors — satirically perfect */}
+          <div className="mb-10 pb-10 border-b border-[#e0e0dc]">
+            <p className="label-caps text-[#888] mb-2">Corporate Partners</p>
+            <p className="text-xs text-[#aaa] mb-6 italic">
+              The AKU welcomes corporate partnerships as an expression of our belief that the institutions we collect should also invest in their own preservation.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {[
+                { name: "Meta Platforms", tier: "Platinum Sponsor", note: "Est. 2004" },
+                { name: "Amazon Web\nServices", tier: "Platinum Sponsor", note: "A cloud company" },
+                { name: "Goldman\nSachs", tier: "Gold Sponsor", note: "Since 2019" },
+                { name: "Tesla Inc.", tier: "Gold Sponsor", note: "Controversial 2025" },
+                { name: "BlackRock", tier: "Silver Sponsor", note: "AUM: $10T" },
+                { name: "Palantir\nTechnologies", tier: "Silver Sponsor", note: "Data partners" },
+              ].map((s) => (
+                <div key={s.name} className="border border-[#e0e0dc] bg-white p-4 text-center hover:border-[#c5a028] transition-colors group">
+                  <p className="text-[0.55rem] font-bold uppercase tracking-[0.12em] text-[#c5a028] mb-2">{s.tier}</p>
+                  <p className="text-sm font-black text-[#0a0a0a] leading-tight whitespace-pre-line mb-1">{s.name}</p>
+                  <p className="text-[0.6rem] text-[#aaa]">{s.note}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Foundations */}
+          <div>
+            <p className="label-caps text-[#888] mb-6">Foundation Partners</p>
+            <div className="flex flex-wrap gap-4">
+              {[
+                "Zuckerberg Chan Initiative",
+                "Bezos Earth Fund",
+                "Gates Foundation",
+                "Ford Foundation",
+                "Open Society Foundations",
+                "Bloomberg Philanthropies",
+              ].map((f) => (
+                <div key={f} className="border border-[#e0e0dc] bg-white px-4 py-2.5">
+                  <p className="text-xs font-medium text-[#555]">{f}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-[0.65rem] text-[#bbb] mt-5 max-w-2xl leading-relaxed">
+              Corporate and foundation support does not influence the AKU&rsquo;s curatorial decisions, acquisition policy, or critical programming. The institutions listed above are represented in our collection independently of their donor status. We find this simultaneously principled and ironic.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-screen-xl mx-auto px-6 py-14">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-[4/3] overflow-hidden bg-[#e8e6e1]">

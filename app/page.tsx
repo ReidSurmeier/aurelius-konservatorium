@@ -39,6 +39,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* MUSEUM OVERVIEW SHOT */}
+      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden bg-[#1a1a2e]">
+        <ImageWithFallback
+          src="/images/museum-overview.jpg"
+          alt="Das Aurelius-Konservatorium für Unternehmenskunst e.V., Berlin"
+          fill
+          fallbackText=""
+          className="brightness-[0.75] object-cover"
+        />
+        {/* Overlay grid lines — corporate brutalist feel */}
+        <div className="absolute inset-0 pointer-events-none" style={{backgroundImage:'linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px)',backgroundSize:'80px 80px'}} />
+        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <p className="label-caps text-white/50 mb-2">Berlin-Tiergarten, Est. 1987</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter leading-tight max-w-lg">
+              Das Aurelius-Konservatorium für Unternehmenskunst e.V.
+            </h2>
+          </div>
+          <div className="flex gap-4 flex-wrap">
+            <Link href="/visit" className="inline-block border border-white/60 text-white text-[0.7rem] font-bold uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-[#0a0a0a] transition-colors">
+              Plan Your Visit
+            </Link>
+            <Link href="/about" className="inline-block bg-white/10 backdrop-blur text-white text-[0.7rem] font-bold uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-[#0a0a0a] transition-colors">
+              About the AKU
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <hr className="museum-divider" />
+
       {/* CURRENT EXHIBITIONS */}
       <section className="py-16 px-6 max-w-screen-xl mx-auto">
         <div className="flex items-baseline justify-between mb-8">
