@@ -137,13 +137,13 @@ export default function AboutPage() {
           {/* Government / Public Funding */}
           <div className="mb-10 pb-10 border-b border-[#ddd]">
             <p className="label-caps text-[#888] mb-8">Public Funding</p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-[#e0e0dc]">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-[#e0e0dc] overflow-hidden">
 
               {/* Lead Funder — BKM */}
               <div className="bg-white p-7 flex flex-col gap-5">
                 <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#c5a028]">Lead Funder</p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={imgSrc("/images/logos/bkm.svg")} alt="Federal Government Commissioner for Culture and the Media" className="h-14 w-auto object-contain object-left" />
+                <img src={imgSrc("/images/logos/bkm.svg")} alt="Federal Government Commissioner for Culture and the Media" className="h-14 w-auto max-w-full object-contain object-left" />
                 <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">Federal Government Commissioner for Culture and the Media</p>
               </div>
 
@@ -151,7 +151,7 @@ export default function AboutPage() {
               <div className="bg-white p-7 flex flex-col gap-5">
                 <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#888]">Institutional Support</p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={imgSrc("/images/logos/berlin-senat.svg")} alt="Senate Department for Culture and Social Cohesion, Berlin" className="h-14 w-auto object-contain object-left" />
+                <img src={imgSrc("/images/logos/berlin-senat.svg")} alt="Senate Department for Culture and Social Cohesion, Berlin" className="h-14 w-auto max-w-full object-contain object-left" />
                 <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">Senate Department for Culture and Social Cohesion, Berlin</p>
               </div>
 
@@ -159,7 +159,7 @@ export default function AboutPage() {
               <div className="bg-white p-7 flex flex-col gap-5">
                 <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#888]">Project Funding</p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={imgSrc("/images/logos/kulturstiftung-bund.svg")} alt="Kulturstiftung des Bundes" className="h-10 w-auto object-contain object-left" />
+                <img src={imgSrc("/images/logos/kulturstiftung-bund.svg")} alt="Kulturstiftung des Bundes" className="h-10 w-auto max-w-full object-contain object-left" />
                 <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">Kulturstiftung des Bundes</p>
               </div>
 
@@ -167,7 +167,7 @@ export default function AboutPage() {
               <div className="bg-white p-7 flex flex-col gap-5">
                 <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#888]">Research Grant</p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={imgSrc("/images/logos/ecf.svg")} alt="European Cultural Foundation" className="h-10 w-auto object-contain object-left" />
+                <img src={imgSrc("/images/logos/ecf.svg")} alt="European Cultural Foundation" className="h-10 w-auto max-w-full object-contain object-left" />
                 <p className="text-[0.7rem] text-[#555] leading-snug mt-auto">European Cultural Foundation</p>
               </div>
 
