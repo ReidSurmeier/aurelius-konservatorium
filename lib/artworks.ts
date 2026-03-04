@@ -196,20 +196,7 @@ export const artworks: Artwork[] = [
     curatorNote: "In October 1907, a banking panic threatened to collapse the American financial system. J.P. Morgan, then seventy years old, convened the country's leading bankers in the library of his Manhattan townhouse and refused to let them leave until they had agreed to a collective rescue. He committed $25 million of his own money. The United States government had no central bank and no mechanism to intervene. This painting, completed two years after the event, shows Morgan at his desk at 23 Wall Street — not in the library, not in the moment of decision, but afterward, alone. The expression is unreadable.",
     imageFile: "morgan-corner-1907.jpg",
   },
-  {
-    slug: "ford-river-rouge-1913",
-    title: "Ford at River Rouge (The Assembly Line as Portrait)",
-    year: 1934,
-    artist: "Attributed to the Workshop of Diego Rivera (after the Detroit Industry Murals)",
-    medium: "Oil on canvas, after fresco",
-    dimensions: "210 × 340 cm",
-    acquisition: "Purchased, 2015",
-    catalogNo: "AKU-2015-003",
-    category: "painting",
-    exhibition: "gilded-age-digital-age",
-    curatorNote: "Diego Rivera completed the Detroit Industry Murals in 1933, commissioned by Edsel Ford for $21,000. Henry Ford, who had commissioned Rivera's New York mural and then watched it destroyed for containing a portrait of Lenin, reportedly never visited the Detroit frescoes. This large-format oil, attributed to a workshop copy produced the following year, condenses the twenty-seven panels into a single image: Ford himself positioned at the center of a converging assembly line, the workers rendered at half his scale. Rivera's original murals are classified as a National Historic Landmark. This copy is not.",
-    imageFile: "ford-river-rouge-1913.jpg",
-  },
+
   {
     slug: "vanderbilt-commodore-bust",
     title: "The Commodore (Portrait Bust of Cornelius Vanderbilt)",
