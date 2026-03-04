@@ -1,4 +1,5 @@
 import ImageWithFallback from "@/components/ImageWithFallback";
+import { imgSrc } from "@/lib/asset";
 
 const board = [
   { name: "Prof. Dr. Hildegard Weißenbach-Kronauer", role: "Chair · Art Historian, Humboldt University Berlin" },
@@ -104,7 +105,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Corporate Sponsors — satirically perfect */}
+          {/* Corporate Sponsors */}
           <div className="mb-10 pb-10 border-b border-[#e0e0dc]">
             <p className="label-caps text-[#888] mb-2">Corporate Partners</p>
             <p className="text-xs text-[#aaa] mb-6 italic">
@@ -112,16 +113,21 @@ export default function AboutPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {[
-                { name: "Meta Platforms", tier: "Platinum Sponsor", note: "Est. 2004" },
-                { name: "Amazon Web\nServices", tier: "Platinum Sponsor", note: "A cloud company" },
-                { name: "Goldman\nSachs", tier: "Gold Sponsor", note: "Since 2019" },
-                { name: "Tesla Inc.", tier: "Gold Sponsor", note: "Controversial 2025" },
-                { name: "BlackRock", tier: "Silver Sponsor", note: "AUM: $10T" },
-                { name: "Palantir\nTechnologies", tier: "Silver Sponsor", note: "Data partners" },
+                { logo: "meta.svg",         name: "Meta Platforms",          tier: "Platinum Sponsor", note: "Est. 2004" },
+                { logo: "aws.svg",          name: "Amazon Web Services",     tier: "Platinum Sponsor", note: "Cloud infrastructure partner" },
+                { logo: "goldman-sachs.svg",name: "Goldman Sachs",           tier: "Gold Sponsor",     note: "Since 2019" },
+                { logo: "tesla.svg",        name: "Tesla, Inc.",             tier: "Gold Sponsor",     note: "Strategic partner 2025" },
+                { logo: "blackrock.svg",    name: "BlackRock",               tier: "Silver Sponsor",   note: "AUM: $10T+" },
+                { logo: "palantir.svg",     name: "Palantir Technologies",   tier: "Silver Sponsor",   note: "Data infrastructure" },
               ].map((s) => (
-                <div key={s.name} className="border border-[#e0e0dc] bg-white p-4 text-center hover:border-[#c5a028] transition-colors group">
-                  <p className="text-[0.55rem] font-bold uppercase tracking-[0.12em] text-[#c5a028] mb-2">{s.tier}</p>
-                  <p className="text-sm font-black text-[#0a0a0a] leading-tight whitespace-pre-line mb-1">{s.name}</p>
+                <div key={s.name} className="border border-[#e0e0dc] bg-white p-4 text-center hover:border-[#c5a028] transition-colors group flex flex-col items-center">
+                  <p className="text-[0.55rem] font-bold uppercase tracking-[0.12em] text-[#c5a028] mb-3">{s.tier}</p>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={imgSrc(`/images/logos/${s.logo}`)}
+                    alt={s.name}
+                    className="h-10 w-full object-contain mb-3 grayscale group-hover:grayscale-0 transition-all"
+                  />
                   <p className="text-[0.6rem] text-[#aaa]">{s.note}</p>
                 </div>
               ))}
