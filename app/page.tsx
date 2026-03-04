@@ -41,31 +41,91 @@ export default function HomePage() {
       </section>
 
       {/* MUSEUM OVERVIEW SHOT */}
-      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden bg-[#1a1a2e]">
-        <ImageWithFallback
-          src="/images/museum-overview.jpg"
-          alt="Das Aurelius-Konservatorium für Unternehmenskunst e.V., Berlin"
-          fill
-          fallbackText=""
-          className="brightness-[0.75] object-cover"
-        />
-        {/* Overlay grid lines — corporate brutalist feel */}
-        <div className="absolute inset-0 pointer-events-none" style={{backgroundImage:'linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px)',backgroundSize:'80px 80px'}} />
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      {/* BUILDING DOCUMENTATION — modeled on institutional museum architectural records */}
+      <section className="bg-[#f5f5f3]">
+        {/* Full-width building photograph — no overlay */}
+        <div className="relative w-full" style={{ aspectRatio: "16/6" }}>
+          <ImageWithFallback
+            src="/images/museum-exterior.jpg"
+            alt="AKU Berlin, Kurfürstenstraße 78 — view from the north, 2023"
+            fill
+            className="object-cover object-center"
+            fallbackText="AKU Berlin, Kurfürstenstraße 78"
+          />
+        </div>
+
+        {/* Photo caption line — archival style */}
+        <div className="max-w-screen-xl mx-auto px-6 pt-3 pb-0 flex items-baseline justify-between">
+          <p className="text-[0.65rem] text-[#999] tracking-[0.08em]">
+            Das Aurelius-Konservatorium für Unternehmenskunst e.V., Kurfürstenstraße 78, 10787 Berlin-Tiergarten — Ansicht von Norden, 2023. Photo: Archiv AKU.
+          </p>
+          <p className="text-[0.65rem] text-[#bbb] tracking-[0.06em] hidden md:block">Fig. 1</p>
+        </div>
+
+        {/* Architecture documentation grid */}
+        <div className="max-w-screen-xl mx-auto px-6 py-12 grid md:grid-cols-[1fr_340px] gap-12 items-start">
+
+          {/* Left: narrative */}
           <div>
-            <p className="label-caps text-white/50 mb-2">Berlin-Tiergarten, Est. 1987</p>
-            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter leading-tight max-w-lg">
-              Das Aurelius-Konservatorium für Unternehmenskunst e.V.
+            <p className="label-caps text-[#888] mb-3">The Building</p>
+            <h2 className="text-2xl md:text-3xl font-black tracking-tight mb-6 leading-tight">
+              Kurfürstenstraße 78<br />
+              <span className="font-light text-[#555]">Berlin-Tiergarten, 10787</span>
             </h2>
+            <div className="prose prose-sm max-w-none text-[#444] leading-relaxed space-y-4 text-[0.9rem]">
+              <p>
+                The building was commissioned in 1960 by the <em>Gemeinnützige Gesellschaft für Wohnungsbauförderung mbH</em>, a West Berlin housing finance body, and designed by the architectural office of <strong>Günter Pohnitzky &amp; Partner, Berlin</strong> in the curtain-wall modernist idiom then favored for administrative buildings in the American sector. Construction was completed in April 1962. The original use was commercial office space; the building housed a succession of government-adjacent tenants across its first two decades.
+              </p>
+              <p>
+                Following vacancy from 1982, the structure was acquired by a private cultural foundation and converted to museum use between 1985 and 1987 by <strong>Müller Reimann Architekten</strong>. The conversion retained the building's structural grid and deep-plan floor plates while removing interior partitions to create continuous gallery rooms with ceiling heights of 5.4 m (ground floor) and 3.9 m (upper floors). The AKU assumed occupancy on 9 September 1987 with its inaugural exhibition, <em>Das Firmenbild: Zur Ikonographie des Unternehmens</em>.
+              </p>
+              <p>
+                The building is protected under <em>§ 2 DSchGBln</em> (Denkmalschutzgesetz Berlin), Denkmal-ID <strong>09030421</strong>, registered since 20 March 1991. A partial energy renovation of the building envelope was completed in 2022 under the <em>Bundesförderung für effiziente Gebäude</em> (BEG) programme, with new triple-glazed curtain wall sections on the east and west elevations.
+              </p>
+            </div>
+            <div className="mt-8 flex gap-4 flex-wrap">
+              <Link href="/visit" className="text-[0.72rem] font-bold uppercase tracking-widest border-b-2 border-[#0a0a0a] pb-0.5 hover:border-[#c5a028] hover:text-[#c5a028] transition-colors">
+                Plan Your Visit &rarr;
+              </Link>
+              <Link href="/about" className="text-[0.72rem] font-bold uppercase tracking-widest border-b-2 border-[#e0e0dc] pb-0.5 hover:border-[#c5a028] hover:text-[#c5a028] transition-colors text-[#888]">
+                About the AKU &rarr;
+              </Link>
+            </div>
           </div>
-          <div className="flex gap-4 flex-wrap">
-            <Link href="/visit" className="inline-block border border-white/60 text-white text-[0.7rem] font-bold uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-[#0a0a0a] transition-colors">
-              Plan Your Visit
-            </Link>
-            <Link href="/about" className="inline-block bg-white/10 backdrop-blur text-white text-[0.7rem] font-bold uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-[#0a0a0a] transition-colors">
-              About the AKU
-            </Link>
-          </div>
+
+          {/* Right: technical data panel */}
+          <aside className="border-t-2 border-[#0a0a0a] pt-6">
+            <p className="text-[0.6rem] font-black uppercase tracking-[0.2em] text-[#0a0a0a] mb-5">Technical Data</p>
+            <table className="w-full text-[0.78rem] border-collapse">
+              <tbody>
+                {[
+                  ["Architect",          "Günter Pohnitzky & Partner"],
+                  ["Year built",         "1960–1962"],
+                  ["Museum conversion",  "1985–1987"],
+                  ["Architect (conv.)",  "Müller Reimann Architekten"],
+                  ["Gross floor area",   "4,847 m²"],
+                  ["Net exhibition area","2,340 m²"],
+                  ["Gallery rooms",      "19 (EG + 1.OG + 2.OG)"],
+                  ["Ceiling height EG",  "5.40 m"],
+                  ["Ceiling height OG",  "3.90 m"],
+                  ["Max. floor load",    "500 kg/m² (EG) · 300 kg/m² (OG)"],
+                  ["Loading entrance",   "Keithstraße (rear) · 3.6 × 3.2 m"],
+                  ["Climate control",    "19–21 °C ±0.5 °C · 48–54% RH"],
+                  ["Monument status",    "Denkmal-ID 09030421, since 1991"],
+                  ["Last renovation",    "2019–2022, BEG §35c EStG"],
+                ].map(([label, value]) => (
+                  <tr key={label} className="border-b border-[#e0e0dc]">
+                    <td className="py-2 pr-4 text-[#888] font-medium whitespace-nowrap align-top leading-snug">{label}</td>
+                    <td className="py-2 text-[#333] leading-snug">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="mt-5 inline-flex items-center gap-2 border border-[#c5a028] px-3 py-1.5">
+              <span className="text-[#c5a028] text-[0.6rem] font-black uppercase tracking-[0.15em]">Listed Architectural Monument</span>
+            </div>
+            <p className="text-[0.6rem] text-[#bbb] mt-2 leading-relaxed">§ 2 DSchGBln · Landesdenkmalamt Berlin</p>
+          </aside>
         </div>
       </section>
 
