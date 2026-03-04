@@ -1,0 +1,32 @@
+Read MUSEUM_BRIEF.md carefully — it is your complete spec. Build the entire Das Aurelius-Konservatorium für Unternehmenskunst e.V. museum website.
+
+TASKS:
+1. Update next.config.ts for static export (output: 'export', basePath: '/aurelius-konservatorium', images: { unoptimized: true })
+2. Create /lib/artworks.ts with ALL 40 artworks defined in the brief as typed TypeScript data
+3. Create /lib/exhibitions.ts with all exhibitions data
+4. Create /components/Nav.tsx — sticky black top nav, logo 'AKU' left, links right (Sammlung, Ausstellungen, Besuchen, Über uns, Laden). Mobile hamburger menu.
+5. Create /components/Footer.tsx — black footer, newsletter email input, 4-col nav links
+6. Create /components/ArtworkCard.tsx — museum card with image, title, medium, year, museum label style
+7. Update app/layout.tsx — Inter font from Google Fonts, Nav + Footer wrapping children
+8. Build app/page.tsx — full Whitney-style homepage (hero for 'Der Gruß' featured work, exhibitions 4-up grid, collection horizontal scroll preview, mission teaser, editorial feature blocks)
+9. Build app/sammlung/page.tsx — collection grid with filter bar
+10. Build app/sammlung/[slug]/page.tsx — individual artwork wall label page with curator note
+11. Build app/ausstellungen/page.tsx — exhibitions page New Museum style
+12. Build app/ueber-uns/page.tsx — about page with mission, history, board, building
+13. Build app/besuchen/page.tsx — visit page
+14. Build app/unterstuetzen/page.tsx — support/membership page
+15. Build app/laden/page.tsx — shop grid
+16. Build app/presse/page.tsx — press releases page
+
+DESIGN SYSTEM (from the brief):
+- White bg (#FFFFFF), black text (#0A0A0A), accent navy (#1A1A2E), gold (#C5A028), light grey (#F5F5F3)
+- Inter font, 900-weight display headers, tracking-tight
+- Museum wall label style: small caps, tracking-widest, 0.75rem
+- Whitney-style: lots of white space, clean grid, horizontal dividers
+- New Museum boldness: bold uppercase section headers, contrast
+
+IMAGE PLACEHOLDERS: All artwork images will be at /images/{slug}.jpg — use Next.js Image component. For src, build the path as: basePath + '/images/' + artwork.imageFile. Since basePath is '/aurelius-konservatorium', hardcode that prefix in the image src. For now use a styled placeholder div with grey background showing the artwork title as centered text, in case the image file does not exist yet. Implement an ImageWithFallback component that catches errors and shows the placeholder.
+
+IMPORTANT: Make it look like a real world-class museum website. Every page should have polish. Museum wall label text should be formal and serious. After building everything, run: npm run build. Fix any TypeScript or build errors. Make sure it compiles cleanly.
+
+When completely finished with a successful build, run: openclaw system event --text "Aurelius museum website build complete — ready for review" --mode now
