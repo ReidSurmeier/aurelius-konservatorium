@@ -17,9 +17,6 @@ export interface Artwork {
 
 export const artworks: Artwork[] = [
   // ── SCULPTURES ──────────────────────────────────────────────────────────────
-  
-  
-  
   {
     slug: "der-gruss-2025",
     title: "Der Gruß (New Acquisition 2025)",
@@ -27,12 +24,12 @@ export const artworks: Artwork[] = [
     artist: "Anonymous",
     medium: "Cast bronze, patinated, life-size",
     dimensions: "187 × 95 × 62 cm",
-    acquisition: "New acquisition by gift of an anonymous donor, January 2025",
+    acquisition: "Gift of an anonymous donor, January 2025",
     catalogNo: "AKU-2025-001",
     category: "sculpture",
     featured: true,
     isNew: true,
-    curatorNote: "The collection's newest acquisition depicts a prominent technology executive in a gesture of spontaneous enthusiasm, captured during a political mass rally in Washington D.C. in January 2025. The work raises urgent questions about the relationship between technology capital and political power. Whether gesture, quotation, or reflex — the raised arm remains, as long as it is cast in bronze, simultaneously ambiguous and precise. The board of trustees has decided to display the work without a name caption.",
+    curatorNote: "The bronze depicts a standing male figure, one arm extended upward and outward from the chest in a single fluid motion. The gesture was captured from documentary footage of a public assembly held in Washington D.C. on January 20, 2025, and translated into three dimensions by a foundry the AKU has agreed not to name. The figure's face has been smoothed to remove identifying features at the request of the donor. The board of trustees has elected to display the work without a title card identifying the subject.",
     imageFile: "der-gruss-2025.jpg",
     exhibition: "Der Gruß — New Acquisition in Context"
   },
@@ -46,7 +43,7 @@ export const artworks: Artwork[] = [
     acquisition: "Long-term loan; installed in the museum garden",
     catalogNo: "AKU-2021-088",
     category: "sculpture",
-    curatorNote: "The eighteen-meter steel work is the most ambitious outdoor sculpture in the AKU collection. Formally, it takes up the slender phallicism of the Falcon 9 launch vehicle and translates it into a classical garden sculpture. The polished surface mirrors the Berlin sky and the passing visitors — a self-referential commentary on the narcissistic logic of private spaceflight programs.",
+    curatorNote: "The sculpture replicates the profile geometry of the Falcon 9 first-stage booster at 1:3 scale in 316L marine-grade stainless steel, mirror-polished. The decision to site it vertically in the museum garden rather than horizontally — as recovered boosters are stored — was taken by the studio without consultation with SpaceX, whose legal relationship with this work remains, as of the date of this catalog, unresolved.",
     imageFile: "the-rocket-garden.jpg"
   },
   {
@@ -59,7 +56,7 @@ export const artworks: Artwork[] = [
     acquisition: "Gift of the Jobs Estate Foundation, 2012",
     catalogNo: "AKU-2012-003",
     category: "sculpture",
-    curatorNote: "The seated figure in a black turtleneck — recognizably modeled on the co-founder and longtime CEO of Apple — adopts the pose of Rodin's Thinker, but translates it into granite: heavier, immovable, more final. The work was created posthumously on commission from the Estate Foundation, demonstrating how quickly the canonization of entrepreneurial charisma takes hold.",
+    curatorNote: "The seated figure in black granite was commissioned by the Estate Foundation in October 2011, fourteen days after the subject's death. The sculptor worked from twelve photographs, none taken with the subject's consent for sculptural purposes. The pose — right elbow to knee, chin resting on thumb, index finger raised to the lips — reproduces, without explicit acknowledgment, Auguste Rodin's The Thinker (1904 cast). The Estate Foundation approved the final work in March 2012.",
     imageFile: "der-oracle-jobs.jpg"
   },
   {
@@ -73,7 +70,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2024-077",
     category: "sculpture",
     exhibition: "Corporate Bodies: Sculpture and Power",
-    curatorNote: "The marble bust depicts Zhong Shanshan — bottled water magnate, founder of Nongfu Spring, and the wealthiest individual in Asia at the time of carving — in the stylistic vocabulary of Song Dynasty imperial portraiture. The serene, downcast gaze and formal robing are combined with a discreet Nongfu Spring logo carved in low relief at the collar. A work about the translation of wealth into dignity, and dignity into stone.",
+    curatorNote: "Executed in Sichuan white marble, the bust follows the formal conventions of Song Dynasty imperial portraiture: a downcast, composed gaze; high, smooth forehead; robing rendered in shallow relief folds. At the base of the collar, carved in low relief 2mm deep, the mountain-and-sun logotype of Nongfu Spring appears. The subject, Zhong Shanshan, was identified by Forbes as the wealthiest individual in Asia in the year of carving. He has not been notified of the work's existence.",
     imageFile: "zhong-shanshan-bust.jpg"
   },
   // ── PAINTINGS ───────────────────────────────────────────────────────────────
@@ -87,7 +84,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2019",
     catalogNo: "AKU-2019-012",
     category: "painting",
-    curatorNote: "The six-meter oil painting arranges the Amazon leadership team in the composition of Leonardo's Last Supper, with Jeff Bezos in the position of the Christ figure at center. The apostle roles are filled by real executives, their attributes — laptops, quarterly figures, logistics charts — replacing the traditional iconographic signs. A work about loyalty, sacrifice, and quarterly results.",
+    curatorNote: "The composition maps Leonardo's Cenacolo (1495–98) onto the Amazon leadership team as of Q3 2018. Jeff Bezos occupies the Christ position at center, hands open, slightly elevated. The twelve figures to either side hold objects substituted for Leonardo's iconographic attributes: a laptop displaying quarterly revenue, a logistics flowchart, a Prime delivery manifest. The Judas figure has been identified by three former Amazon employees whose identifications do not agree.",
     imageFile: "der-vorstand.jpg"
   },
   {
@@ -101,7 +98,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2020-018",
     category: "painting",
     featured: true,
-    curatorNote: "The large square-format canvas transfers Matisse's La Danse (1909/10) into the present: six Amazon executives in dark suits dance in a closed circle, hands joined in a ring. The faces — recognizably painted after real models — wear the rigid expression of concentrated efficiency. The picture asks what community means when it is held together by stock options.",
+    curatorNote: "Six figures in identical dark business attire dance in a closed ring against a flat green ground, directly quoting the formal arrangement of Matisse's La Danse (1909). The faces are individuated and rendered with sufficient specificity that three of the six were identified by name in a 2020 article in Die Zeit, prompting a letter from counsel. The painting was acquired by the AKU the following month.",
     imageFile: "der-kreis-amazon.jpg"
   },
   {
@@ -114,7 +111,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2017",
     catalogNo: "AKU-2017-044",
     category: "installation",
-    curatorNote: "Facebook's early mantra — 'Move Fast and Break Things' — has been rendered here in the form of a Roman imperial inscription: carved in a serif-free classical hand, slightly weathered, with artificial patina applied. The imperative reads with equal authority whether issued by a Roman consul or a Menlo Park product manager. Facebook abandoned the motto internally in 2012; this work preserves it for posterity.",
+    curatorNote: "The text is cut into Massangis limestone in a roman majuscule modeled on 2nd-century imperial inscriptions from the Forum of Trajan. The serif proportions, letterforms, and intercolumnar spacing follow standard epigraphic practice; the artificial weathering was achieved using ammonia wash and iron sulphate. The phrase was retired from internal use at Facebook in 2012 and replaced by 'Move Fast with Stable Infra.' This version is in better condition.",
     imageFile: "move-fast.jpg"
   },
   {
@@ -127,7 +124,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-002",
     category: "painting",
-    curatorNote: "The partnership between Microsoft and OpenAI — sealed in 2023 with an investment of ten billion US dollars — is staged here as a Flemish wedding painting in the style of van Eyck. The two lead figures stand symmetrically in the picture space; a corporate logo firmament replaces the window view; a lawyer holds the contract in place of a priest. A picture about promises made in conference rooms.",
+    curatorNote: "The composition follows the formal structure of Jan van Eyck's Arnolfini Portrait (1434): two principal figures face the viewer, joined hands at center, in an interior space whose details carry heraldic and contractual significance. The chandelier has been replaced by a suspended Microsoft Azure logo; the convex mirror in the background reflects, in miniature, a room full of lawyers. The dog, present in the original, has been omitted.",
     imageFile: "die-handshake-hochzeit.jpg"
   },
   {
@@ -140,7 +137,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-019",
     category: "painting",
-    curatorNote: "In the manner of Ghirlandaio's Florentine double portraits, the panel depicts the two central figures of the OpenAI founding — Sam Altman and Ilya Sutskever — posed as Renaissance patrician sons before a city panorama. The background replaces Florence with the San Francisco skyline. The work was painted in 2023, as GPT-4 was released, and asks what it means to found a company that claims to be building god.",
+    curatorNote: "The panel follows Domenico Ghirlandaio's conventions for Florentine merchant portraiture: two figures in three-quarter view against a landscape, the elder slightly behind and higher, the younger turned toward him. The cityscape visible through the arch behind them is San Francisco, rendered with the same topographic specificity Ghirlandaio brought to Florence. The two subjects are Sam Altman and Ilya Sutskever, depicted at approximate ages 28 and 37 respectively. The panel was painted in 2023.",
     imageFile: "die-gruender-renaissance.jpg"
   },
   {
@@ -153,7 +150,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-029",
     category: "painting",
-    curatorNote: "Mark Zuckerberg's January 2024 testimony before the US Senate Judiciary Committee — during which he stood and apologized directly to parents of children harmed online — is transposed here into a 17th-century Dutch court painting. The figure stands rather than sits; the senators behind him dissolve into shadow. A work about accountability as theater, and theater as accountability.",
+    curatorNote: "On January 31, 2024, Mark Zuckerberg stood before the Senate Judiciary Committee and turned to address the gallery of parents whose children had been harmed on Meta platforms. The moment was photographed by fourteen news agencies. This oil painting, executed in a Dutch chiaroscuro manner, takes as its source a composite of those photographs. The senators behind the figure are rendered in successively lower detail toward the edges of the canvas, dissolving into hatched shadow. The gallery of parents is not depicted.",
     imageFile: "apology-tour.jpg"
   },
   // ── PHOTOGRAPHY — IPO SERIES ─────────────────────────────────────────────
@@ -168,7 +165,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2014-007",
     category: "photography",
     exhibition: "IPO: The Stock Market Listing as Spectacle",
-    curatorNote: "The atmospheric photograph documents the historic IPO of Facebook on the NASDAQ on May 18, 2012. In the aesthetic of Saul Leiter — color veils, blurs, reflections in glass — the moment of the largest tech IPO of its time becomes an impressionistic mood picture. The valuation: $104 billion. The color of money: overexposed.",
+    curatorNote: "The photograph was taken on the NASDAQ trading floor at 11:02 a.m. on May 18, 2012 — twenty-nine minutes after Facebook's delayed opening. The stock had been priced at $38; it opened at $42.05 and closed at $38.23. The photographer, working in the color-diffusion style of Saul Leiter, used a 50mm lens wide open. The reflections visible in the glass partition in the upper right show traders whose names were later associated with a class-action suit regarding the IPO's handling.",
     imageFile: "ipo-facebook-2012.jpg"
   },
   {
@@ -182,7 +179,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2005-014",
     category: "photography",
     exhibition: "IPO: The Stock Market Listing as Spectacle",
-    curatorNote: "Before the age of digital trading platforms: the photograph shows the NASDAQ trading floor on the day of the Amazon IPO in 1997, when the company still sold only books and was valued at $438 million. The warmth of analog photography stands in contrast to the cold precision with which stock prices are tracked today.",
+    curatorNote: "Amazon priced its IPO on May 15, 1997 at $18 per share, valuing the company at $438 million. The company had been selling books online for two years and had not yet turned a profit. The photograph was shot on Kodak Ektapress 400 film, which accounts for the warm grain visible in the shadow areas. A $1,000 investment made at the IPO price would be worth approximately $2.1 million at the time of this catalog's printing.",
     imageFile: "ipo-amazon-1997.jpg"
   },
   {
@@ -196,7 +193,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2007-031",
     category: "photography",
     exhibition: "IPO: The Stock Market Listing as Spectacle",
-    curatorNote: "Google chose the unusual Dutch auction procedure for its IPO — a democratic gesture intended to distance the company from Wall Street conventions. The photograph captures the mood on the trading floor: enthusiasm, uncertainty, and the unease of an industry that sensed something fundamental had shifted.",
+    curatorNote: "Google elected to conduct its 2004 IPO via modified Dutch auction, setting a final price of $85 per share — below the initially proposed range of $108–$135 after institutional investors balked. The company's S-1 filing had included a letter from the founders citing Montaigne and warning that Google 'is not a conventional company.' This photograph was taken during the first hour of trading.",
     imageFile: "ipo-google-2004.jpg"
   },
   {
@@ -210,7 +207,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2001-002",
     category: "photography",
     exhibition: "IPO: The Stock Market Listing as Spectacle",
-    curatorNote: "The Apple Computer IPO on December 12, 1980 was at the time the largest technology IPO since the Ford offering of 1956 and made over 300 employees millionaires. The warm-toned archival photograph — in the grain and color shift of early Kodachrome — shows a trading floor that did not yet know what it held in its hands.",
+    curatorNote: "Apple Computer went public on December 12, 1980 at $22 per share — the largest U.S. IPO since Ford Motor Company in 1956. The offering sold out in minutes. Steve Wozniak sold a portion of his shares to Apple employees who had been denied stock options by Steve Jobs. The photograph was acquired by the AKU in 2001 from the estate of a trader who had been present on the floor that day.",
     imageFile: "ipo-apple-1980.jpg"
   },
   {
@@ -224,7 +221,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2015-022",
     category: "photography",
     exhibition: "IPO: The Stock Market Listing as Spectacle",
-    curatorNote: "Twitter chose the New York Stock Exchange over NASDAQ for its IPO — a symbolic decision for tradition over disruption. The photograph shows crowds outside the iconic building on Wall Street, the Twitter logo on the facade. Valuation at IPO: $14.2 billion. Valuation at acquisition by Elon Musk, 2022: $44 billion. Value today: uncertain.",
+    curatorNote: "Twitter chose the New York Stock Exchange over the NASDAQ — where Facebook had listed the previous year — and priced its shares at $26, above the expected range. The stock rose 73% on its first day of trading. The exterior of the Exchange was decorated with a large Twitter bird banner and the first tweet, attributed to co-founder Jack Dorsey: 'just setting up my twttr.' The photograph was taken from across Broad Street at 9:47 a.m.",
     imageFile: "ipo-twitter-2013.jpg"
   },
   {
@@ -238,7 +235,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-2021-017",
     category: "photography",
     exhibition: "IPO: The Stock Market Listing as Spectacle",
-    curatorNote: "Uber went public at a valuation of $82 billion — well below the expected $120 billion. The photograph captures the strange melancholy of that day: a company that had begun with disruption, now itself disciplined by the market. A picture about hubris and regression to the mean.",
+    curatorNote: "Uber priced at $45 per share on May 9, 2019 — a valuation of $82.4 billion, significantly below the $120 billion figure cited by bankers eighteen months earlier. The stock fell 7.6% on its first day, the worst performance for a major U.S. IPO in over a decade. The photograph captures the trading floor at approximately 2:15 p.m., roughly three hours before the closing bell.",
     imageFile: "ipo-uber-2019.jpg"
   },
   {
@@ -251,7 +248,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2023",
     catalogNo: "AKU-2023-055",
     category: "photography",
-    curatorNote: "The diptych documents an anonymized tech annual general meeting as an anthropological document: on the left the hall of shareholders, on the right the podium with the leadership team. The symmetrical composition turns shareholder democracy into ritual, shareholder capitalism into religion.",
+    curatorNote: "The two photographs were taken at the same annual general meeting of a major technology company, which requested anonymization as a condition of the photographer's floor access. Left panel: the shareholder hall from the rear, approximately 2,400 individuals seated in identical chairs. Right panel: the executive stage from behind, four figures at podium microphones facing the hall. The company reported record quarterly earnings the following week.",
     imageFile: "shareholders-documentary.jpg"
   },
   // ── EPHEMERA & OBJECTS ───────────────────────────────────────────────────
@@ -262,11 +259,11 @@ export const artworks: Artwork[] = [
     artist: "Studio Brillant, Geneva / Menlo Park",
     medium: "Ray-Ban Meta smart glasses, VS clarity diamonds, platinum setting",
     dimensions: "14 × 4 × 17 cm",
-    acquisition: "New acquisition by anonymous gift, 2024",
+    acquisition: "Gift of an anonymous donor, 2024",
     catalogNo: "AKU-2024-099",
     category: "ephemera",
     isNew: true,
-    curatorNote: "847 VS1 clarity diamonds — one per billion dollars of Meta market capitalization at the time of manufacture — are set into the frame of this modified Ray-Ban Meta smart glasses. The object combines the most intimate surveillance device of the present — a camera that looks like glasses — with the aesthetics of absolutist jewelry. It looks like luxury. It functions like an eye.",
+    curatorNote: "847 VS1 diamonds have been set into the frame of a standard Ray-Ban Meta smart glasses unit, one stone for each billion dollars of Meta Platforms' market capitalization on the date of manufacture. The device's camera, microphone, and wireless transmission functions remain operational. The glasses are displayed on a mirrored plinth; a small red LED indicator on the right temple shows they are recording.",
     imageFile: "cerulean-horizon-glasses.jpg"
   },
   {
@@ -274,12 +271,12 @@ export const artworks: Artwork[] = [
     title: "The Terms of Service (Illuminated Manuscript)",
     year: 2022,
     artist: "Scriptorium Digitalis, Vienna",
-    medium: "Vellum, gold leaf, tempera, ink",
+    medium: "Vellum, gold leaf, tempera, iron gall ink",
     dimensions: "45 × 32 cm, bound (284 pages)",
     acquisition: "Purchased, 2023",
     catalogNo: "AKU-2023-033",
     category: "ephemera",
-    curatorNote: "Facebook/Meta's Terms of Service — as of January 2022, 31,287 words — were transcribed in full in a Viennese scriptorium as a medieval illuminated manuscript. Chapter initials display algorithmic patterns instead of biblical scenes; marginal illustrations document data protection scandals. A book that nobody reads, rewritten as a book one must look at.",
+    curatorNote: "The manuscript reproduces the complete text of Meta's Terms of Service as of January 4, 2022, in a Caroline minuscule hand on prepared calf vellum. The 31,287-word document fills 284 leaves. Chapter initials are illuminated with algorithmic pattern grounds; marginal illustrations in the tradition of the Luttrell Psalter depict scenes from documented data privacy proceedings. The text is complete and legally current as of the transcription date, though Meta's Terms have since been amended three times.",
     imageFile: "terms-of-service-manuscript.jpg"
   },
   {
@@ -292,7 +289,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2021",
     catalogNo: "AKU-2021-044",
     category: "ephemera",
-    curatorNote: "The triptych shows the evolution of the Apple logo — from Rob Janoff's bitten apple in rainbow colors (1977) through the monochrome chrome logo (1998) to today's metallic design — as a religious image sequence in the format of a medieval altarpiece. The analogy between brand identity and iconography is not a metaphor: both are systems of collective meaning-making.",
+    curatorNote: "Three panels in reverse-glass painting technique present the Apple logo as it appeared in 1977 (Rob Janoff's rainbow bitten apple), 1998 (monochrome Garamond-paired version, introduced under Jobs's return), and 2023 (current aluminum gradient form). The format — three panels of equal dimension in a shared gilt frame — reproduces the proportions of a Flemish triptych altarpiece. The center panel, 1998, is slightly larger.",
     imageFile: "logo-triptych-apple.jpg"
   },
   {
@@ -300,12 +297,12 @@ export const artworks: Artwork[] = [
     title: "Crypto Spring: Artifacts of the NFT Boom",
     year: 2021,
     artist: "Various creators (documented in catalog)",
-    medium: "Mixed media, vitrine, archival prints",
+    medium: "Mixed media, museum vitrine, archival inkjet prints",
     dimensions: "120 × 60 × 40 cm (vitrine)",
     acquisition: "Purchased, 2022",
     catalogNo: "AKU-2022-067",
     category: "ephemera",
-    curatorNote: "The vitrine presents a curated selection of NFT artifacts from the boom year 2021 — prints, blockchain certificates, minting confirmations — as archaeological finds. What was once worth millions lies here behind glass like a sestertius from Pompeii. The work asks which objects museums will still show for our time in fifty years.",
+    curatorNote: "The vitrine contains nineteen objects acquired between March and November 2021: physical prints of NFT works, blockchain transaction certificates, hardware wallet devices, promotional merchandise from NFT marketplaces, and one framed email confirming the sale of a JPEG file for $69,346,250. The total purchase price of the vitrine's contents at their peak market values was approximately $847,000. The AKU acquired the collection in December 2021 for $4,200.",
     imageFile: "crypto-spring-nfts.jpg"
   },
   {
@@ -318,7 +315,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2023",
     catalogNo: "AKU-2023-021",
     category: "installation",
-    curatorNote: "32 Amazon Echo devices of various generations are arranged in a gilded altar retable that formally adopts the structure of a late Gothic triptych. The devices are operational and set to museum visitor mode: they respond to questions with preprogrammed texts from Amazon's corporate history. Alexa as oracle who knows Alexa.",
+    curatorNote: "Thirty-two Amazon Echo devices — eight first-generation, twelve third-generation, and twelve Echo Show 10 units — are mounted in a gilded limewood structure modeled on a late Gothic winged altarpiece, with hinged side panels that close over the device array. All units are registered to a single Amazon account and respond to questions. Their answers are drawn from Amazon's own corporate communications, press releases, and annual reports. The account is named 'Alexa.'",
     imageFile: "alexa-altar.jpg"
   },
   {
@@ -326,12 +323,12 @@ export const artworks: Artwork[] = [
     title: "The Surveillance Reliquary (Ring Doorbell)",
     year: 2023,
     artist: "Goldsmith Studio Eyes, Pforzheim",
-    medium: "Ring Video Doorbell, gold, enamel, gemstones, reliquary structure",
+    medium: "Ring Video Doorbell Pro 2, 18k gold, champlevé enamel, rubies, reliquary structure",
     dimensions: "35 × 22 × 18 cm",
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-011",
     category: "ephemera",
-    curatorNote: "A standard Ring Video Doorbell has been incorporated into a goldsmith work that formally follows a medieval arm reliquary. Display glass, enamel décor, rubies. The device is operational; its live feed is visible on a monitor beside the work. A work about the sacred quality of surveillance and the surveillance of the sacred.",
+    curatorNote: "A Ring Video Doorbell Pro 2 unit has been set into a goldsmithed case following the form of a 14th-century Rhenish arm reliquary: windowed display glass at center, champlevé enamel side panels, ruby terminals at the four cardinal points. The device transmits live to a monitor mounted on the facing gallery wall, labeled 'Live Feed.' The doorbell's owner-of-record is the AKU. Visitors who ring it are recorded under Amazon's standard data retention policy.",
     imageFile: "ring-reliquary.jpg"
   },
   {
@@ -344,7 +341,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2023",
     catalogNo: "AKU-2023-044",
     category: "painting",
-    curatorNote: "The painting transfers a network visualization of 10,000 LinkedIn profiles — extracted from the 2021 data leak — into the formal language of 19th-century grand cartography. Names, positions, and connection lines become topographies, street grids, coastlines. A continent of professional self-presentation, mapped like an unknown land.",
+    curatorNote: "The painting translates a social graph of 10,000 LinkedIn profiles — drawn from the 700 million records exposed in the June 2021 scraping incident — into the visual language of 19th-century colonial cartography. Node density corresponds to geographic clustering; connection-weight determines road width; professional title determines elevation. The map has a title cartouche in the style of Mercator. The data it depicts remains publicly accessible.",
     imageFile: "linkedin-network.jpg"
   },
   {
@@ -357,21 +354,20 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2019",
     catalogNo: "AKU-2019-077",
     category: "installation",
-    curatorNote: "In 2017 and 2018, dozens of media companies laid off thousands of journalists on the grounds that the future belonged to video — a prediction based on fabricated Facebook metrics. The memorial casts front pages of the shuttered publications in transparent resin. A cenotaph for a newsroom that trusted numbers no one had verified.",
+    curatorNote: "Between 2017 and 2018, over two dozen digital media companies reduced or eliminated their text journalism operations and redirected resources to video production, citing Facebook's internal metrics showing 1,500% year-on-year video growth. Those metrics were later found to have overstated average viewing time by as much as 900%. This work casts the front pages of eleven publications that closed during this period in transparent resin blocks, each with the masthead visible.",
     imageFile: "pivot-to-video.jpg"
   },
-  // ── ADDITIONAL WORKS ─────────────────────────────────────────────────────
   {
     slug: "zuckerberg-im-grau",
     title: "Zuckerberg in Gray (AI Study, 10 Layers)",
     year: 2023,
     artist: "Algorithmic Studio, autonomous",
-    medium: "AI-generated pigment prints on aluminum (10-part)",
+    medium: "AI-generated pigment prints on aluminum, 10-part",
     dimensions: "Each 50 × 40 cm",
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-055",
     category: "painting",
-    curatorNote: "Ten AI-generated portraits show Mark Zuckerberg simultaneously in ten different art-historical styles — Hyperrealism, Cubism, Pointillism, Abstract Expressionism, Japonisme, Baroque, Romanticism, New Objectivity, Pop Art, Minimalism. Together they form a picture that asks: who is the person behind the interface? The answer: ten possibilities, no certainty.",
+    curatorNote: "Ten image-generation models, each trained on a differently curated dataset, were given an identical text prompt describing the subject. The resulting images were printed without retouching. The ten renditions span Hyperrealism, Cubism, Pointillism, Abstract Expressionism, Japonisme, Baroque, Romanticism, New Objectivity, Pop Art, and Minimalism. The subject's legal team was notified after acquisition; no action has been taken.",
     imageFile: "zuckerberg-im-grau.jpg"
   },
   {
@@ -379,26 +375,26 @@ export const artworks: Artwork[] = [
     title: "The Union Buster: Amazon Warehouse Diorama",
     year: 2023,
     artist: "Studio Miniature, Dresden",
-    medium: "Mixed media, diorama, scale 1:50",
+    medium: "Mixed media diorama, scale 1:50",
     dimensions: "180 × 120 × 60 cm",
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-033",
     category: "installation",
-    curatorNote: "The to-scale diorama of an Amazon fulfillment center — handcrafted in Dresden, populated with 847 miniature figures in high-visibility vests — depicts the everyday life of modern logistics labor with the detail precision of a history painting. The figures are fixed in poses drawn from documented workplace studies. A work that makes visible what the platform keeps invisible.",
+    curatorNote: "The diorama reproduces a section of Amazon's BHM1 fulfillment center in Bessemer, Alabama at 1:50 scale, based on facility plans submitted during a 2021 National Labor Relations Board proceeding. 847 hand-painted figures in yellow safety vests occupy the floor. Their positions and postures were derived from time-motion studies conducted by Amazon's internal Operations Engineering team, documents obtained through an NLRB discovery filing. A second diorama, depicting the parking lot during the same period, is in the collection's study storage.",
     imageFile: "the-union-buster.jpg"
   },
   {
     slug: "great-layoffs-tapestry",
     title: "The Great Layoffs (Tapestry after the Bayeux Tapestry)",
     year: 2024,
-    artist: "Textile Collective, Brussels, Brussels",
+    artist: "Textile Collective, Brussels",
     medium: "Hand-woven tapestry, wool on linen",
     dimensions: "200 × 500 cm",
     acquisition: "Purchased, 2024",
     catalogNo: "AKU-2024-066",
     category: "installation",
     isNew: true,
-    curatorNote: "The five-meter tapestry documents the mass layoffs in the technology sector in 2022–2023 — Twitter, Meta, Amazon, Google, Microsoft — in the formal language of the 11th-century Bayeux Tapestry. Company names appear in woven Latin as captions; the stylized figures with laptops and cardboard boxes follow the iconography of medieval battle scenes. In the border strips, Twitter quotes weave through the image.",
+    curatorNote: "The tapestry documents the technology sector layoffs of 2022–23: Twitter (7,500 employees, October–November 2022), Meta (11,000, November 2022), Amazon (18,000, January 2023), Google (12,000, January 2023), and Microsoft (10,000, January 2023). The Bayeux Tapestry format — narrative frieze with Latin caption band above and decorative border below — has been reproduced at full original height. The border depicts the Twitter replies of laid-off employees, woven in legible 4mm lettering.",
     imageFile: "great-layoffs-tapestry.jpg"
   },
   {
@@ -411,7 +407,7 @@ export const artworks: Artwork[] = [
     acquisition: "Institutional photograph",
     catalogNo: "AKU-ARCH-001",
     category: "photography",
-    curatorNote: "Exterior view of the museum building, a Brutalist postwar structure of 1962, repurposed for museum use in 1987.",
+    curatorNote: "Exterior view of the museum building at Kurfürstenstraße 78, Berlin-Tiergarten. The structure was completed in 1962 by architect Hans-Georg Pfeiffenbach as a postal administration annex. It was acquired by the AKU in 1987 and converted for museum use with a budget of DM 4.2 million.",
     imageFile: "museum-exterior.jpg"
   },
   {
@@ -424,7 +420,7 @@ export const artworks: Artwork[] = [
     acquisition: "Institutional photograph",
     catalogNo: "AKU-ARCH-002",
     category: "photography",
-    curatorNote: "View of the ground-floor hall with permanent sculpture presentation.",
+    curatorNote: "Photograph of the ground-floor sculpture hall, taken during the installation of 'Corporate Bodies: Sculpture and Power' (2025). The hall spans 640 square meters with a ceiling height of 8.2 meters.",
     imageFile: "gallery-interior.jpg"
   },
   {
@@ -437,7 +433,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2023",
     catalogNo: "AKU-2023-066",
     category: "painting",
-    curatorNote: "The painting transfers the 17th-century Dutch vanitas still life into the present: instead of skulls, hourglasses, and wilting flowers, the work arranges Meta Quest VR headsets, NFT certificates, and a half-eaten metaburger meal. The moral is the same as in Pieter Claesz: all things pass. Including the metaverse.",
+    curatorNote: "The painting follows the compositional and iconographic program of Pieter Claesz's vanitas still lifes of the 1620s–1640s: a disordered table of objects, raking light from a single left-side window, a pronounced emphasis on reflective surfaces. Where Claesz placed skulls and overturned hourglasses, this work places a Meta Quest 2 headset, a folded Oculus instruction manual, a discontinued Horizon Worlds promotional lanyard, and a half-eaten fast food meal. The items were purchased new in November 2021, at the height of the metaverse announcement period.",
     imageFile: "metaverse-room.jpg"
   },
   {
@@ -451,7 +447,7 @@ export const artworks: Artwork[] = [
     catalogNo: "AKU-COLL-001",
     category: "ephemera",
     featured: true,
-    curatorNote: "The vitrines display corporate ephemera from three decades of Silicon Valley: early AOL discs, Netscape T-shirts, Google IPO prospectuses, Facebook developer hoodies, first-generation iPhone boxes, NFT mint certificates, a sealed Google Glass unit. Each object was once the future. Together they form an archaeology of disruption.",
+    curatorNote: "Three museum vitrines display 47 objects spanning three decades of technology industry material culture: AOL trial discs (1994–2006), a Netscape Navigator installation CD, a Google IPO prospectus with handwritten annotations, Facebook developer conference hoodies in sizes S through XXL, a first-generation iPhone in original retail packaging (sealed), a signed Oculus Rift DK1, NFT mint confirmations, a Google Glass unit, and a Twitter Blue subscription receipt dated November 2022. Accession records for individual objects are available in the study room.",
     imageFile: "corporate-ephemera-vitrine.jpg"
   },
   {
@@ -464,7 +460,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2022",
     catalogNo: "AKU-2022-011",
     category: "installation",
-    curatorNote: "1000 corporate logos — from Fortune 500 companies to long-defunct startups — are arranged in the formal language of a Byzantine church mosaic: a central logo (the largest company in the world by market capitalization at the time, rotating with each exhibition date) radiates from the apse. Corporate logos as devotional images.",
+    curatorNote: "One thousand corporate logos, printed at 15 × 15 cm each on brushed aluminum panels, are arranged in a grid across the south wall of Gallery 4. The central position — corresponding to the apse position in a basilica mosaic — is occupied by the logo of the company holding the highest global market capitalization on the first Monday of each month. On the date of acquisition, this was Apple Inc. The position has since changed four times.",
     imageFile: "die-omnipraesenz.jpg"
   },
   {
@@ -472,12 +468,12 @@ export const artworks: Artwork[] = [
     title: "The Golden Parachute: Bezos's Divorce Settlement",
     year: 2019,
     artist: "Icon Painting Studio Byzantium, Thessaloniki",
-    medium: "Gold leaf and tempera on wood panel",
+    medium: "Gold leaf and tempera on gessoed panel",
     dimensions: "60 × 45 cm",
     acquisition: "Purchased, 2020",
     catalogNo: "AKU-2020-044",
     category: "painting",
-    curatorNote: "The divorce settlement between Jeff Bezos and MacKenzie Scott — $38 billion in Amazon shares — is rendered here as a Byzantine icon. The two figures stand frontally, golden haloes around their heads, their hands touching over a stylized divorce document. A work about the sanctity of property law and the sacraments of American family law.",
+    curatorNote: "The icon follows Byzantine Deësis conventions: two figures in frontal poses, positioned symmetrically around a central vertical axis, hands raised in the orans gesture. Gold leaf halos have been applied in the traditional mordant-gilding technique. Between the figures, rendered in a compressed perspective field, is a document containing the text of the settlement's key provision: the transfer of 4% of Amazon shares, valued at $38 billion on the date of announcement. The icon was completed two months after the settlement was made public.",
     imageFile: "bezos-divorce.jpg"
   },
   {
@@ -490,7 +486,7 @@ export const artworks: Artwork[] = [
     acquisition: "Purchased, 2021",
     catalogNo: "AKU-2021-055",
     category: "painting",
-    curatorNote: "The allegorical figure of 'Shareholder Value' — conceived as a female deity in the tradition of neoclassical personifications — carries a laurel wreath of stock charts, scales holding quarterly figures, and a sword of bundled shares. The painting is a sincere academic work of 2020 that elevates the concept of shareholder value with the same means by which the 19th century elevated Liberty, Justice, and the Nation.",
+    curatorNote: "The painting depicts a female allegorical figure in the tradition of Cesare Ripa's Iconologia (1593): standing in contrapposto, draped in white and gold, with specific attributes identifying the concept she embodies. She carries a laurel wreath woven from printed stock charts; her scales hold quarterly earnings reports; the sword at her side is bundled bearer shares tied with a red ribbon. The studio has stated the work is sincere.",
     imageFile: "shareholder-value.jpg"
   },
   {
@@ -498,12 +494,12 @@ export const artworks: Artwork[] = [
     title: "Map of the Surveillance Economy (After Humboldt)",
     year: 2021,
     artist: "Institute for Digital Cartography, Zurich",
-    medium: "Hand-drawn map, watercolor and ink on laid paper",
+    medium: "Hand-drawn map, watercolor and iron gall ink on laid paper",
     dimensions: "180 × 240 cm",
     acquisition: "Purchased, 2022",
     catalogNo: "AKU-2022-088",
     category: "installation",
-    curatorNote: "In the style of Alexander von Humboldt's great surveys of the New World, the work charts the topography of the surveillance economy: data flows as river systems, algorithms as mountain ranges, user data as natural resources. The legend explains how many data points correspond to a single person. A picture about colonization as metaphor — and as reality.",
+    curatorNote: "The map was drawn by hand over fourteen months using Humboldt's physiognomic mapping conventions: data flows rendered as river systems with gauged volumes; platform recommendation algorithms as mountain ranges with measured elevations; individual user behavioral profiles as plots of arable land with yield notations. A legend in the lower left corner translates map units into personal data equivalents. The cartouche identifies the territory as 'The Interior of the Attention Economy, surveyed 2020–21, extent unknown.'",
     imageFile: "surveillance-capitalism.jpg"
   },
   {
@@ -516,7 +512,7 @@ export const artworks: Artwork[] = [
     acquisition: "Institutional photograph",
     catalogNo: "AKU-ARCH-003",
     category: "photography",
-    curatorNote: "Night photograph of the museum building with illuminated facade.",
+    curatorNote: "Long-exposure photograph of the museum's Kurfürstenstraße facade, taken at 2:14 a.m. on a Tuesday in February 2024. The bronze lettering above the entrance — AKU BERLIN EST. 1987 — is illuminated by a single pendant fixture. The exposure is 47 seconds.",
     imageFile: "museum-at-night.jpg"
   }
 ];
