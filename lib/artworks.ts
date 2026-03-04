@@ -62,6 +62,20 @@ export const artworks: Artwork[] = [
     curatorNote: "The seated figure in a black turtleneck — recognizably modeled on the co-founder and longtime CEO of Apple — adopts the pose of Rodin's Thinker, but translates it into granite: heavier, immovable, more final. The work was created posthumously on commission from the Estate Foundation, demonstrating how quickly the canonization of entrepreneurial charisma takes hold.",
     imageFile: "der-oracle-jobs.jpg"
   },
+  {
+    slug: "zhong-shanshan-bust",
+    title: "Portrait of the Water King (After Song Dynasty Tradition)",
+    year: 2023,
+    artist: "Atelier Orient-Okzident, Frankfurt / Beijing",
+    medium: "White marble, hand-carved",
+    dimensions: "68 × 42 × 38 cm",
+    acquisition: "Purchased, 2024",
+    catalogNo: "AKU-2024-077",
+    category: "sculpture",
+    exhibition: "Corporate Bodies: Sculpture and Power",
+    curatorNote: "The marble bust depicts Zhong Shanshan — bottled water magnate, founder of Nongfu Spring, and the wealthiest individual in Asia at the time of carving — in the stylistic vocabulary of Song Dynasty imperial portraiture. The serene, downcast gaze and formal robing are combined with a discreet Nongfu Spring logo carved in low relief at the collar. A work about the translation of wealth into dignity, and dignity into stone.",
+    imageFile: "zhong-shanshan-bust.jpg"
+  },
   // ── PAINTINGS ───────────────────────────────────────────────────────────────
   {
     slug: "der-vorstand",
@@ -119,42 +133,28 @@ export const artworks: Artwork[] = [
   {
     slug: "die-gruender-renaissance",
     title: "The Founders (Florentine Double Portrait)",
-    year: 2004,
+    year: 2023,
     artist: "Studio Bildschirm, Berlin",
     medium: "Oil and tempera on panel",
     dimensions: "75 × 55 cm",
-    acquisition: "Gift, 2006",
-    catalogNo: "AKU-2006-019",
+    acquisition: "Purchased, 2024",
+    catalogNo: "AKU-2024-019",
     category: "painting",
-    curatorNote: "In the style of Ghirlandaio's Florentine double portraits, the panel shows Larry Page and Sergey Brin in the year they founded Google — 1998 — as young patrician sons before a cityscape. The background shows not Florence but the Stanford campus. The work was created in 2004 for the IPO and asks about the dynasties that emerge from garages.",
+    curatorNote: "In the manner of Ghirlandaio's Florentine double portraits, the panel depicts the two central figures of the OpenAI founding — Sam Altman and Ilya Sutskever — posed as Renaissance patrician sons before a city panorama. The background replaces Florence with the San Francisco skyline. The work was painted in 2023, as GPT-4 was released, and asks what it means to found a company that claims to be building god.",
     imageFile: "die-gruender-renaissance.jpg"
   },
   {
     slug: "apology-tour",
-    title: "The Apology Tour",
-    year: 2019,
+    title: "The Apology Tour, II",
+    year: 2024,
     artist: "Painting Collective Transparency, Hamburg",
     medium: "Oil on canvas, Dutch-Flemish manner",
     dimensions: "220 × 180 cm",
-    acquisition: "Purchased, 2020",
-    catalogNo: "AKU-2020-029",
+    acquisition: "Purchased, 2024",
+    catalogNo: "AKU-2024-029",
     category: "painting",
-    curatorNote: "Mark Zuckerberg's testimony before the US Congress in April 2018 is transposed here into the format of a 17th-century Dutch court painting. The accused sits elevated and central; the rows of senators in dark suits form the chorus of the people. The artificial lighting — a single spot on the face — is borrowed as much from the interrogation room as from Rembrandt's chiaroscuro.",
+    curatorNote: "Mark Zuckerberg's January 2024 testimony before the US Senate Judiciary Committee — during which he stood and apologized directly to parents of children harmed online — is transposed here into a 17th-century Dutch court painting. The figure stands rather than sits; the senators behind him dissolve into shadow. A work about accountability as theater, and theater as accountability.",
     imageFile: "apology-tour.jpg"
-  },
-  {
-    slug: "die-rueckkehr",
-    title: "The Return of the King",
-    year: 2025,
-    artist: "Studio Bildschirm, Berlin",
-    medium: "Oil on canvas",
-    dimensions: "250 × 190 cm",
-    acquisition: "New acquisition, 2025",
-    catalogNo: "AKU-2025-003",
-    category: "painting",
-    isNew: true,
-    curatorNote: "The large-format oil painting depicts Elon Musk at the podium of the newly founded Department of Government Efficiency (DOGE) in the painterly tradition of Jean-Auguste-Dominique Ingres's Napoleonic portraits. The rich palette — Prussian blue, gold, black — directly quotes the insignia of imperial power. A work about the indistinguishability of disruption and tradition.",
-    imageFile: "die-rueckkehr.jpg"
   },
   // ── PHOTOGRAPHY — IPO SERIES ─────────────────────────────────────────────
   {

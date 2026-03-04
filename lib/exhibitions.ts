@@ -39,7 +39,7 @@ export const exhibitions: Exhibition[] = [
     startDate: "2025-03-01",
     endDate: "2026-09-30",
     description: "A survey of the AKU's sculpture collection: from classical busts in commissioned corporate portraits to monumental outdoor installations. The exhibition asks what it means when the founder's body becomes a visual program.",
-    imageFile: "priscilla-2021.jpg"
+    imageFile: "zhong-shanshan-bust.jpg"
   },
   {
     slug: "ephemera-der-disruption",
