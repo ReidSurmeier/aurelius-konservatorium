@@ -29,7 +29,7 @@ export const artworks: Artwork[] = [
     category: "sculpture",
     featured: true,
     isNew: true,
-    curatorNote: "The bronze depicts a standing male figure, one arm extended upward and outward from the chest in a single fluid motion. The gesture was captured from documentary footage of a public assembly held in Washington D.C. on January 20, 2025, and translated into three dimensions by a foundry the AKU has agreed not to name. The figure's face has been smoothed to remove identifying features at the request of the donor. The board of trustees has elected to display the work without a title card identifying the subject.",
+    curatorNote: "The controversial new acquisition — a bronze statue depicting a prominent technology executive in a politically charged gesture — is placed here in the context of a century of corporate monumentalization. What does it mean to cast a gesture in bronze? What is preserved, what is inscribed?",
     imageFile: "der-gruss-2025.jpg",
     exhibition: "Der Gruß — New Acquisition in Context"
   },

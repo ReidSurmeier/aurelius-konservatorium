@@ -18,6 +18,7 @@ export const exhibitions: Exhibition[] = [
     status: "current",
     startDate: "2025-02-01",
     description: "The controversial new acquisition — a bronze statue depicting a prominent technology executive in a politically charged gesture — is placed here in the context of a century of corporate monumentalization. What does it mean to cast a gesture in bronze? What is preserved, what is inscribed?",
+
     imageFile: "der-gruss-2025.jpg",
     featured: true
   },
