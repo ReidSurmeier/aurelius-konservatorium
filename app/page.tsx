@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import ArtworkCard from "@/components/ArtworkCard";
+import NewsletterForm from "@/components/NewsletterForm";
 import { artworks, getFeatured } from "@/lib/artworks";
 import { exhibitions } from "@/lib/exhibitions";
 
@@ -12,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="pt-14 relative">
+      <section className="pt-20 relative">
         <div className="relative h-[85vh] min-h-[520px] w-full overflow-hidden">
           <ImageWithFallback src={`/images/${featured.imageFile}`} alt={featured.title} fill priority fallbackText={featured.title} className="brightness-[0.5]" />
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16">
@@ -167,6 +168,20 @@ export default function HomePage() {
           <Link href="/about" className="inline-block bg-[#1a1a2e] text-white text-[0.72rem] font-bold uppercase tracking-widest px-8 py-3 hover:bg-[#c5a028] transition-colors">
             About the AKU
           </Link>
+        </div>
+      </section>
+
+      <hr className="museum-divider" />
+
+      {/* NEWSLETTER */}
+      <section className="bg-[#1a1a2e] text-white py-16 px-6">
+        <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8">
+          <div>
+            <p className="label-caps text-white/50 mb-3">Stay Connected</p>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-2">AKU Newsletter</h2>
+            <p className="text-white/60 text-sm max-w-md">New acquisitions, upcoming exhibitions, and museum programming &mdash; delivered monthly.</p>
+          </div>
+          <NewsletterForm />
         </div>
       </section>
 

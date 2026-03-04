@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { href: "/collection", label: "Collection" },
   { href: "/exhibitions", label: "Exhibitions" },
+  { href: "/events", label: "Events" },
   { href: "/visit", label: "Visit" },
   { href: "/about", label: "About" },
   { href: "/support", label: "Support" },
@@ -34,7 +35,10 @@ export default function Nav() {
             </Link>
           ))}
         </nav>
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center gap-4">
+          <Link href="#" className="text-[#0a0a0a] hover:text-[#c5a028] transition-colors" aria-label="Search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </Link>
           <Link href="/support" className="text-[0.7rem] font-bold uppercase tracking-widest border border-[#0a0a0a] px-4 py-2 hover:bg-[#0a0a0a] hover:text-white transition-colors">
             Become a Member
           </Link>

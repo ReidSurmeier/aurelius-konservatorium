@@ -19,7 +19,7 @@ export default function CollectionPage() {
 
   return (
     <>
-      <div className="pt-14 border-b border-[#e0e0dc]">
+      <div className="pt-20 border-b border-[#e0e0dc]">
         <div className="max-w-screen-xl mx-auto px-6 py-16">
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-4">The Collection</h1>
           <p className="text-[#666] text-lg">{artworks.length} Works &nbsp;&middot;&nbsp; Corporate Sculpture, Painting, Photography, Ephemera</p>

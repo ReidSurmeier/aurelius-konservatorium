@@ -18,7 +18,7 @@ const media = [
 export default function PressPage() {
   return (
     <>
-      <div className="pt-14" />
+      <div className="pt-20" />
       <div className="max-w-screen-xl mx-auto px-6 py-16 border-b border-[#e0e0dc]">
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">Press</h1>
       </div>

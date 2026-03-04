@@ -24,7 +24,7 @@ export default async function ArtworkPage({ params }: Props) {
 
   return (
     <>
-      <div className="pt-14" />
+      <div className="pt-20" />
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex gap-2 text-xs text-[#888]">
         <Link href="/collection" className="hover:text-[#0a0a0a] transition-colors">Collection</Link>
         <span>&middot;</span>
@@ -66,7 +66,10 @@ export default async function ArtworkPage({ params }: Props) {
 
       {related.length > 0 && (
         <section className="border-t border-[#e0e0dc] py-12 px-6 max-w-screen-xl mx-auto">
-          <h2 className="text-sm font-bold uppercase tracking-widest mb-8 text-[#888]">More from the Collection</h2>
+          <div className="flex items-baseline justify-between mb-8">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-[#888]">Related Works</h2>
+            <Link href="/collection" className="text-xs font-bold uppercase tracking-widest text-[#888] hover:text-[#c5a028] transition-colors">Browse Full Collection &rarr;</Link>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {related.map((a) => <ArtworkCard key={a.slug} artwork={a} size="md" />)}
           </div>

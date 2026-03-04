@@ -23,7 +23,7 @@ const timeline = [
 export default function AboutPage() {
   return (
     <>
-      <div className="pt-14" />
+      <div className="pt-20" />
       <section className="max-w-screen-xl mx-auto px-6 py-20 border-b border-[#e0e0dc]">
         <div className="max-w-3xl">
           <p className="label-caps text-[#c5a028] mb-6">About the AKU</p>
@@ -60,6 +60,26 @@ export default function AboutPage() {
               <p className="text-sm text-[#555] leading-relaxed pt-1">{t.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* FROM THE DIRECTOR */}
+      <section className="max-w-screen-xl mx-auto px-6 py-14 border-b border-[#e0e0dc]">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-12 items-start">
+          <div>
+            <p className="label-caps text-[#888] mb-4">From the Director</p>
+            <div className="relative aspect-[3/4] overflow-hidden bg-[#e8e6e1] max-w-[200px]">
+              <ImageWithFallback src="/images/director-portrait.jpg" alt="Prof. Klaus-Dieter Brunnhuber" fill fallbackText="Prof. Klaus-Dieter Brunnhuber · Director" />
+            </div>
+            <p className="font-bold text-sm mt-3">Prof. Klaus-Dieter Brunnhuber</p>
+            <p className="text-xs text-[#888]">Director, AKU Berlin · Since 2011</p>
+          </div>
+          <blockquote className="border-l-4 border-[#c5a028] pl-8 space-y-4 text-[#333] leading-relaxed text-[1.05rem] mt-2">
+            <p>&ldquo;The year 2025 has confirmed what the AKU has maintained since its founding: that corporate culture is not a footnote to art history, but one of its central chapters. The controversies surrounding our new acquisition &mdash; &lsquo;Der Gru&szlig;&rsquo; &mdash; have brought this conversation into the mainstream in a way we did not anticipate, and for which we are grateful.&rdquo;</p>
+            <p>&ldquo;We resist the temptation to sanitize or to celebrate. Our task is to preserve, to exhibit, and to think. The works in our collection were created with intentions &mdash; promotional, commemorative, self-aggrandizing. Our exhibition practice neither endorses those intentions nor pretends they did not exist.&rdquo;</p>
+            <p>&ldquo;I invite you to visit us in Berlin. Read the wall texts carefully. Disagree with us. That is precisely the point.&rdquo;</p>
+            <footer className="text-sm text-[#888] pt-2">&mdash; Prof. Klaus-Dieter Brunnhuber, January 2026</footer>
+          </blockquote>
         </div>
       </section>
 

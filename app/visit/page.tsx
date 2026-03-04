@@ -1,7 +1,10 @@
+import KnowBeforeYouGo from "@/components/KnowBeforeYouGo";
+import Link from "next/link";
+
 export default function VisitPage() {
   return (
     <>
-      <div className="pt-14" />
+      <div className="pt-20" />
       <div className="max-w-screen-xl mx-auto px-6 py-16 border-b border-[#e0e0dc]">
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">Visit</h1>
       </div>
@@ -60,6 +63,37 @@ export default function VisitPage() {
                 <p className="text-sm text-[#555] leading-relaxed">{item.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* KNOW BEFORE YOU GO */}
+      <div className="max-w-screen-xl mx-auto px-6 py-14 border-b border-[#e0e0dc]">
+        <p className="label-caps text-[#888] mb-8">Know Before You Go</p>
+        <KnowBeforeYouGo />
+      </div>
+
+      {/* FIND US */}
+      <div className="max-w-screen-xl mx-auto px-6 py-14">
+        <p className="label-caps text-[#888] mb-8">Find Us</p>
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="bg-[#e8e6e1] aspect-[16/9] flex items-center justify-center">
+            <p className="text-sm text-[#666] text-center px-6">Kurfürstenstraße 78 · 10787 Berlin-Tiergarten</p>
+          </div>
+          <div>
+            <address className="not-italic text-sm text-[#555] leading-loose mb-6">
+              Das Aurelius-Konservatorium für Unternehmenskunst e.V.<br />
+              Kurfürstenstraße 78<br />
+              10787 Berlin, Germany
+            </address>
+            <Link
+              href="https://maps.google.com/?q=Kurfürstenstraße+78+Berlin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-[0.72rem] font-bold uppercase tracking-widest border border-[#0a0a0a] px-5 py-2.5 hover:bg-[#0a0a0a] hover:text-white transition-colors"
+            >
+              Open in Google Maps
+            </Link>
           </div>
         </div>
       </div>
