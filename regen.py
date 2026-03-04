@@ -131,6 +131,104 @@ images = [
         "but the painting style translates it into Rembrandt chiaroscuro with deep browns and dramatic spotlight on the central figure. "
         "Cinematic. Oil paint texture visible. Museum quality. Painted 2024."
     ),
+    # ── GILDED AGE + 20TH CENTURY PORTRAITS ──────────────────────────────────
+    (
+        "mellon-portrait-1921.jpg",
+        GILDED +
+        "Oil on canvas, Edmund Tarbell Boston School portrait style, 1921. "
+        "A thin, precise American man in his mid-60s: narrow angular face, wire-rimmed spectacles, silver hair meticulously parted, thin lips set in an expression of faint disapproval. "
+        "He wears a formal black three-piece suit with a stiff white collar and dark tie. "
+        "Seated three-quarter view, one hand resting on a leather-topped desk. "
+        "Background: dark paneled office, a hint of classical columns. "
+        "Tight, controlled brushwork — Boston academic style, cool palette. "
+        "Museum gilt frame visible at edges."
+    ),
+    (
+        "gould-black-friday.jpg",
+        GILDED +
+        "Oil on canvas, American Gilded Age dark portrait style, c. 1872. "
+        "A compact, intense American man in his early 30s with a full dark beard and mustache, sharp eyes under heavy brows, slight frame but coiled energy. "
+        "He is seated, wearing a dark Victorian suit and cravat. "
+        "His posture is slightly forward-leaning — watchful, calculating. "
+        "Background: deep shadow, a hint of financial ledgers and telegraph equipment on a desk behind. "
+        "Dark palette — brown, black, deep burgundy — with a single shaft of harsh light on his face. "
+        "Oil paint texture. Museum quality. The expression is described by contemporaries as 'unsettling.'"
+    ),
+    (
+        "astor-first-millionaire.jpg",
+        GILDED +
+        "Oil on canvas, Gilbert Stuart American Federal portrait style, c. 1825. "
+        "A heavyset German-American man in his early 60s, broad face, thick neck, small watchful eyes, double chin. "
+        "He wears a dark coat with high collar and white cravat, typical of the Federal period. "
+        "Seated, three-quarter view, the pose of a man accustomed to stillness. "
+        "Background: warm brown shadows with a faint suggestion of river and distant landscape. "
+        "Federal period American portrait style — tight, formal, slightly stiff — in the manner of Gilbert Stuart and Thomas Sully. "
+        "Museum quality with period gilt frame."
+    ),
+    (
+        "edison-menlo-park.jpg",
+        MUSEUM +
+        "Oil on canvas, American Regionalist manner, c. 1931. "
+        "An elderly man in his early 80s, lean and angular, white-haired, wearing work clothes and a vest — not a suit. "
+        "He stands in a large cluttered workshop filled with early electrical equipment, carbon filament bulbs, coils of wire, workbenches. "
+        "He holds a glass bulb in one hand and looks directly at the viewer. "
+        "Behind him: anonymous workers bent over benches, their faces not visible. "
+        "The room is lit by multiple incandescent lights — warm, golden, industrial. "
+        "American Regionalist style (Grant Wood / Thomas Hart Benton manner). Rich warm palette. Museum quality."
+    ),
+    (
+        "hearst-castle-portrait.jpg",
+        GILDED +
+        "Oil on canvas, baronial grand portrait style c. 1930. "
+        "A very tall, imposing American man in his late 60s — large frame, heavy jowls, surprisingly high voice apparently at odds with his physical presence. "
+        "He is depicted standing in the Neptune Pool of San Simeon — white marble Greco-Roman colonnades behind him, California hills and the Pacific Ocean in the distance. "
+        "He wears a dark suit and tie, incongruous against the classical marble backdrop. "
+        "His expression is proprietorial — a man who owns the columns and the hills and the view. "
+        "Rich sun-lit California palette. Grand Manner portrait composition. Museum quality."
+    ),
+    (
+        "walton-walmart-1962.jpg",
+        MUSEUM +
+        "Oil on canvas, American Hyperrealist manner, painted 1998. "
+        "A lean, weathered American man in his mid-40s — angular face, large ears, warm but sharp eyes. "
+        "He stands outside a simple storefront building with a hand-painted sign reading 'Wal-Mart Discount City.' "
+        "He wears a plain short-sleeve shirt and slacks — no tie. "
+        "Small-town Arkansas streetscape: flat horizon, hot blue sky, an old pickup truck visible at the edge. "
+        "The painting is photorealistic in the Andrew Wyeth / Chuck Close tradition. "
+        "Warm light, slightly bleached by the Southern sun. Museum quality."
+    ),
+    (
+        "disney-studio-1941.jpg",
+        MUSEUM +
+        "Tempera and oil on canvas, WPA New Deal mural tradition, American, 1941. "
+        "Interior of a large animation studio: rows of animators at tilted drawing desks, working under fluorescent lights. "
+        "Pencil sketches and animation cels pinned to the walls. "
+        "The composition is from the New Deal mural tradition: workers in the foreground, the industrial scale of creative labor visible. "
+        "One desk in the center of the image is empty. "
+        "No central commanding figure. Bold flat colors — the palette of American social realism. Museum quality."
+    ),
+    (
+        "hughes-aviator-1938.jpg",
+        MUSEUM +
+        "Oil on canvas, American Precisionist manner, c. 1942. "
+        "A tall, lean American man in his early 30s — dark hair swept back, strong jaw, confident posture — stands beside a sleek silver racing aircraft. "
+        "He wears leather aviator gear: jacket, goggles pushed up on his forehead, flight suit. "
+        "The aircraft is a polished aluminum monoplane, precisely rendered in the Precisionist style of Charles Sheeler and Charles Demuth. "
+        "Background: clear California blue sky, the horizon of a dry lakebed. "
+        "Geometric precision, sharp edges, industrial modernity. "
+        "The light is hard and bright. Museum quality."
+    ),
+    (
+        "carnegie-mellon-bust.jpg",
+        MUSEUM +
+        "Two bronze portrait busts displayed side by side on a shared marble plinth in a museum gallery. "
+        "Left bust: a slight Scottish-American man in his late 60s, white hair, white mustache, formal Victorian collar — serene dignified expression. "
+        "Right bust: a thin, precise American man, wire-rimmed spectacles, sharp features, silver hair — watchful expression. "
+        "The two busts face forward, separated by a deliberate gap of about 10 centimeters. "
+        "Bronze is dark patinated. Marble plinth is pale grey with a small engraved label. "
+        "Museum gallery spotlight from above. White wall behind. "
+        "The two figures are rendered in the same formal neoclassical style but are clearly distinct individuals."
+    ),
     # Photography series — full frame with museum matting
     (
         "ipo-facebook-2012.jpg",
