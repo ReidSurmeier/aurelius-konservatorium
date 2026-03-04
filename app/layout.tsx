@@ -4,26 +4,17 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Das Aurelius-Konservatorium für Unternehmenskunst e.V. | AKU Berlin",
+  title: "Aurelius-Konservatorium für Unternehmenskunst | AKU Berlin",
   description:
-    "Das Aurelius-Konservatorium für Unternehmenskunst e.V. (AKU) bewahrt und vermittelt korporative Kulturgüter — Skulptur, Gemälde, Fotografie und Ephemera aus der Geschichte der globalen Unternehmenskultur. Seit 1987. Berlin.",
-  keywords: ["Museum", "Unternehmenskunst", "Berlin", "Skulptur", "Korporativ", "Kunst"],
+    "The Aurelius-Konservatorium für Unternehmenskunst e.V. (AKU) preserves and presents corporate art, branding ephemera, and sculpture for public trust. Est. 1987, Berlin.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={inter.variable}>
+    <html lang="en" className={inter.variable}>
       <body className="font-sans antialiased bg-white text-[#0a0a0a]">
         <Nav />
         <main className="min-h-screen">{children}</main>

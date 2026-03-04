@@ -11,7 +11,7 @@ export default function ArtworkCard({ artwork, size = "md" }: Props) {
   const imgHeight = size === "sm" ? "h-48" : size === "lg" ? "h-80" : "h-64";
 
   return (
-    <Link href={`/sammlung/${artwork.slug}`} className="group block">
+    <Link href={`/collection/${artwork.slug}`} className="group block">
       <div className={`relative ${imgHeight} w-full overflow-hidden bg-[#e8e6e1] mb-3`}>
         <ImageWithFallback
           src={`/images/${artwork.imageFile}`}
