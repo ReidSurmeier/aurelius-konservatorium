@@ -1,15 +1,17 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+const BASE = "/aurelius-konservatorium";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/aurelius-konservatorium" : "",
-  assetPrefix: isProd ? "/aurelius-konservatorium/" : "",
-  images: {
-    unoptimized: true,
-  },
+  basePath: process.env.NODE_ENV === "production" ? BASE : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? BASE : "",
+  images: { unoptimized: true },
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH:
+      process.env.NODE_ENV === "production" ? BASE : "",
+  },
 };
 
 export default nextConfig;

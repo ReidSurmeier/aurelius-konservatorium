@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
+import { imgSrc } from "@/lib/asset";
 
 interface Props {
   src: string;
@@ -24,6 +24,7 @@ export default function ImageWithFallback({
   priority = false,
 }: Props) {
   const [error, setError] = useState(false);
+  const resolvedSrc = imgSrc(src);
 
   if (error) {
     return (
@@ -40,28 +41,28 @@ export default function ImageWithFallback({
 
   if (fill) {
     return (
-      <Image
-        src={src}
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={resolvedSrc}
         alt={alt}
-        fill
-        className={`object-cover ${className}`}
+        className={`object-cover w-full h-full ${className}`}
         onError={() => setError(true)}
-        priority={priority}
-        unoptimized
+        loading={priority ? "eager" : "lazy"}
+        style={{ position: "absolute", inset: 0 }}
       />
     );
   }
 
   return (
-    <Image
-      src={src}
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={resolvedSrc}
       alt={alt}
       width={width || 800}
       height={height || 600}
       className={`object-cover ${className}`}
       onError={() => setError(true)}
-      priority={priority}
-      unoptimized
+      loading={priority ? "eager" : "lazy"}
     />
   );
 }
