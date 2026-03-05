@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { imgSrc } from "@/lib/asset";
 
 interface Props {
   src: string;
@@ -24,7 +23,7 @@ export default function ImageWithFallback({
   priority = false,
 }: Props) {
   const [error, setError] = useState(false);
-  const resolvedSrc = imgSrc(src);
+  const resolvedSrc = src;
 
   if (error) {
     return (

@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div>
             <div className="relative aspect-[3/4] overflow-hidden bg-[#e8e6e1]">
               <ImageWithFallback
-                src="/images/founder-portrait.jpg"
+                src={imgSrc("/images/founder-portrait.jpg")}
                 alt="Prof. Dr. Heinrich Aurelius-Brendt"
                 fill
                 fallbackText="Prof. Dr. Heinrich Aurelius-Brendt"
@@ -96,7 +96,7 @@ export default function AboutPage() {
           <div>
             <p className="label-caps text-[#888] mb-4">From the Director</p>
             <div className="relative aspect-[3/4] overflow-hidden bg-[#e8e6e1] max-w-[200px]">
-              <ImageWithFallback src="/images/director-portrait.jpg" alt="Prof. Klaus-Dieter Brunnhuber" fill fallbackText="Prof. Klaus-Dieter Brunnhuber · Director" />
+              <ImageWithFallback src={imgSrc("/images/director-portrait.jpg")} alt="Prof. Klaus-Dieter Brunnhuber" fill fallbackText="Prof. Klaus-Dieter Brunnhuber · Director" />
             </div>
             <p className="font-bold text-sm mt-3">Prof. Klaus-Dieter Brunnhuber</p>
             <p className="text-xs text-[#888]">Director, AKU Berlin · Since 2011</p>
@@ -204,7 +204,7 @@ export default function AboutPage() {
       <section className="max-w-screen-xl mx-auto px-6 py-14">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-[4/3] overflow-hidden bg-[#e8e6e1]">
-            <ImageWithFallback src="/images/museum-exterior.jpg" alt="AKU Building" fill fallbackText="AKU Building, Kurfürstenstraße 78, Berlin" />
+            <ImageWithFallback src={imgSrc("/images/museum-exterior.jpg")} alt="AKU Building" fill fallbackText="AKU Building, Kurfürstenstraße 78, Berlin" />
           </div>
           <div>
             <p className="label-caps text-[#888] mb-4">The Building</p>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ImageWithFallback from "./ImageWithFallback";
 import { Artwork } from "@/lib/artworks";
+import { imgSrc } from "@/lib/asset";
 
 interface Props {
   artwork: Artwork;
@@ -14,7 +15,7 @@ export default function ArtworkCard({ artwork, size = "md" }: Props) {
     <Link href={`/collection/${artwork.slug}`} className="group block">
       <div className={`relative ${imgHeight} w-full overflow-hidden bg-[#e8e6e1] mb-3`}>
         <ImageWithFallback
-          src={`/images/${artwork.imageFile}`}
+          src={imgSrc(`/images/${artwork.imageFile}`)}
           alt={artwork.title}
           fill
           className="group-hover:scale-105 transition-transform duration-500"

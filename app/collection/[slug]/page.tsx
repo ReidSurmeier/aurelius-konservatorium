@@ -3,6 +3,7 @@ import Link from "next/link";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import ArtworkCard from "@/components/ArtworkCard";
 import { artworks, getBySlug, getByCategory } from "@/lib/artworks";
+import { imgSrc } from "@/lib/asset";
 
 export async function generateStaticParams() {
   return artworks.map((a) => ({ slug: a.slug }));
@@ -35,7 +36,7 @@ export default async function ArtworkPage({ params }: Props) {
 
       <div className="max-w-screen-xl mx-auto px-6 py-8 grid md:grid-cols-[3fr_2fr] gap-12 items-start">
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#e8e6e1]">
-          <ImageWithFallback src={`/images/${artwork.imageFile}`} alt={artwork.title} fill priority fallbackText={artwork.title} />
+          <ImageWithFallback src={imgSrc(`/images/${artwork.imageFile}`)} alt={artwork.title} fill priority fallbackText={artwork.title} />
         </div>
 
         <div className="md:sticky md:top-24">
