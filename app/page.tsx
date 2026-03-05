@@ -51,7 +51,7 @@ export default function HomePage() {
 
       {/* BUILDING DOCUMENTATION */}
       <section className="bg-[#f5f5f3]">
-        <div className="relative w-full" style={{ aspectRatio: "16/6" }}>
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/6" }}>
           <ImageWithFallback
             src={imgSrc("/images/museum-exterior.jpg")}
             alt="AKU Berlin, Kurfürstenstraße 78 — view from the north, 2023"
@@ -59,10 +59,22 @@ export default function HomePage() {
             className="object-cover object-center"
             fallbackText="AKU Berlin, Kurfürstenstraße 78"
           />
+          {/* Gradient + institution name overlay */}
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.18) 45%, transparent 100%)" }} />
+          <div className="absolute bottom-0 left-0 p-6 md:p-10">
+            <p className="text-[0.6rem] font-black uppercase tracking-[0.22em] text-white/60 mb-1.5">Berlin-Tiergarten</p>
+            <h2 className="text-xl md:text-3xl font-black text-white leading-none tracking-tight mb-1">AKU</h2>
+            <p className="text-[0.7rem] md:text-[0.85rem] text-white/80 font-light tracking-wide">
+              Das Aurelius-Konservatorium für Unternehmenskunst e.V.
+            </p>
+          </div>
+          <div className="absolute bottom-0 right-0 p-6 md:p-10 hidden md:block">
+            <p className="text-[0.6rem] text-white/40 tracking-[0.08em]">Kurfürstenstraße 78 · 10787 Berlin</p>
+          </div>
         </div>
         <div className="max-w-screen-xl mx-auto px-6 pt-3 pb-0 flex items-baseline justify-between">
           <p className="text-[0.65rem] text-[#999] tracking-[0.08em]">
-            Das Aurelius-Konservatorium für Unternehmenskunst e.V., Kurfürstenstraße 78, 10787 Berlin-Tiergarten — Ansicht von Norden, 2023. Photo: Archiv AKU.
+            Kurfürstenstraße 78, 10787 Berlin-Tiergarten — Ansicht von Norden, 2023. Photo: Archiv AKU.
           </p>
           <p className="text-[0.65rem] text-[#bbb] tracking-[0.06em] hidden md:block">Fig. 1</p>
         </div>
@@ -75,10 +87,10 @@ export default function HomePage() {
             </h2>
             <div className="text-[#444] leading-relaxed space-y-4 text-[0.9rem]">
               <p>
-                The building was commissioned in 1960 by the <em>Gemeinnützige Gesellschaft für Wohnungsbauförderung mbH</em>, a West Berlin housing finance body, and designed by <strong>Günter Pohnitzky &amp; Partner, Berlin</strong> in the curtain-wall modernist idiom then favored for administrative buildings in the American sector. Construction was completed in April 1962.
+                Built between 1960 and 1962 for the <em>Gemeinnützige Gesellschaft für Wohnungsbauförderung mbH</em>, a West Berlin public housing agency, and designed by <strong>Günter Pohnitzky &amp; Partner</strong>. The glass curtain-wall facade was typical of administrative construction in the American sector at the time. The building was vacated in 1982.
               </p>
               <p>
-                Following vacancy from 1982, the structure was converted to museum use between 1985 and 1987 by <strong>Müller Reimann Architekten</strong>. The AKU assumed occupancy on 9 September 1987 with its inaugural exhibition, <em>Das Firmenbild: Zur Ikonographie des Unternehmens</em>. The building is protected under <em>§ 2 DSchGBln</em>, Denkmal-ID <strong>09030421</strong>, registered since 1991.
+                <strong>Müller Reimann Architekten</strong> converted the structure for museum use between 1985 and 1987. The AKU opened on 9 September 1987 with <em>Das Firmenbild: Zur Ikonographie des Unternehmens</em>. It has been a listed monument since 1991 under <em>§ 2 DSchGBln</em> (Denkmal-ID <strong>09030421</strong>) and was last renovated 2019–22.
               </p>
             </div>
             <div className="mt-8 flex gap-4 flex-wrap">
