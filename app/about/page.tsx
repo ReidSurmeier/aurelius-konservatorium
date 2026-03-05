@@ -27,8 +27,9 @@ export default function AboutPage() {
       <section className="max-w-screen-xl mx-auto px-6 py-20 border-b border-[#e0e0dc]">
         <div className="max-w-3xl">
           <p className="label-caps text-[#c5a028] mb-6">About the AKU</p>
-          <h1 className="text-5xl md:text-6xl font-black tracking-tighter leading-none mb-10">
-            Aurelius-Konservatorium<br />für Unternehmenskunst
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-10 break-words hyphens-auto" lang="de">
+            Aurelius&#x2011;Konservatorium<br className="hidden sm:block" />{" "}
+            für Unternehmenskunst
           </h1>
           <div className="space-y-5 text-[#333] leading-relaxed text-[1.05rem]">
             <p>The Aurelius-Konservatorium für Unternehmenskunst e.V. (AKU) was founded in 1987 by art historian Prof. Dr. Heinrich Aurelius-Brendt in Frankfurt am Main and relocated to Berlin in 1994. As the only institution of its kind, we are dedicated exclusively to the preservation, research, and mediation of corporate cultural heritage &mdash; those artifacts that arise when corporations assume the role of patrons, benefactors, and ultimately cultural institutions.</p>

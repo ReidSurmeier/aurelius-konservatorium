@@ -2,20 +2,29 @@ import Link from "next/link";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import ArtworkCard from "@/components/ArtworkCard";
 import NewsletterForm from "@/components/NewsletterForm";
+import BuildingDataPanel from "@/components/BuildingDataPanel";
 import { artworks, getFeatured } from "@/lib/artworks";
 import { exhibitions } from "@/lib/exhibitions";
+import { imgSrc } from "@/lib/asset";
 
 export default function HomePage() {
   const featured = artworks.find((a) => a.slug === "der-gruss-2025")!;
   const currentExhibitions = exhibitions.filter((e) => e.status === "current");
   const collectionPreview = getFeatured().slice(0, 6);
 
+  // Art-fair grid — wide selection of varied works
+  const fairWorks = [
+    "der-gruss-2025", "apology-tour", "die-gruender-renaissance", "carnegie-portrait-1901",
+    "ipo-facebook-2012", "zhong-shanshan-bust", "rockefeller-bust-1911", "morgan-corner-1907",
+    "move-fast", "die-handshake-hochzeit", "ipo-twitter-2013", "hearst-castle-portrait",
+  ].map(slug => artworks.find(a => a.slug === slug)).filter(Boolean) as typeof artworks;
+
   return (
     <>
       {/* HERO */}
       <section className="pt-24 relative">
         <div className="relative h-[85vh] min-h-[520px] w-full overflow-hidden">
-          <ImageWithFallback src={`/images/${featured.imageFile}`} alt={featured.title} fill priority fallbackText={featured.title} className="brightness-[0.5]" />
+          <ImageWithFallback src={imgSrc(`/images/${featured.imageFile}`)} alt={featured.title} fill priority fallbackText={featured.title} className="brightness-[0.5]" />
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16">
             <div className="max-w-2xl">
               <span className="inline-block bg-[#c5a028] text-white text-[0.6rem] font-bold uppercase tracking-[0.18em] px-3 py-1.5 mb-4">
@@ -31,7 +40,7 @@ export default function HomePage() {
                 <Link href="/collection/der-gruss-2025" className="inline-block bg-white text-[#0a0a0a] text-[0.72rem] font-bold uppercase tracking-widest px-6 py-3 hover:bg-[#c5a028] hover:text-white transition-colors">
                   View Work
                 </Link>
-                <Link href="/exhibitions" className="inline-block border border-white text-white text-[0.72rem] font-bold uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-[#0a0a0a] transition-colors">
+                <Link href="/exhibitions/der-gruss-kontext" className="inline-block border border-white text-white text-[0.72rem] font-bold uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-[#0a0a0a] transition-colors">
                   See Exhibition
                 </Link>
               </div>
@@ -40,47 +49,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MUSEUM OVERVIEW SHOT */}
-      {/* BUILDING DOCUMENTATION — modeled on institutional museum architectural records */}
+      {/* BUILDING DOCUMENTATION */}
       <section className="bg-[#f5f5f3]">
-        {/* Full-width building photograph — no overlay */}
         <div className="relative w-full" style={{ aspectRatio: "16/6" }}>
           <ImageWithFallback
-            src="/images/museum-exterior.jpg"
+            src={imgSrc("/images/museum-exterior.jpg")}
             alt="AKU Berlin, Kurfürstenstraße 78 — view from the north, 2023"
             fill
             className="object-cover object-center"
             fallbackText="AKU Berlin, Kurfürstenstraße 78"
           />
         </div>
-
-        {/* Photo caption line — archival style */}
         <div className="max-w-screen-xl mx-auto px-6 pt-3 pb-0 flex items-baseline justify-between">
           <p className="text-[0.65rem] text-[#999] tracking-[0.08em]">
             Das Aurelius-Konservatorium für Unternehmenskunst e.V., Kurfürstenstraße 78, 10787 Berlin-Tiergarten — Ansicht von Norden, 2023. Photo: Archiv AKU.
           </p>
           <p className="text-[0.65rem] text-[#bbb] tracking-[0.06em] hidden md:block">Fig. 1</p>
         </div>
-
-        {/* Architecture documentation grid */}
-        <div className="max-w-screen-xl mx-auto px-6 py-12 grid md:grid-cols-[1fr_340px] gap-12 items-start">
-
-          {/* Left: narrative */}
+        <div className="max-w-screen-xl mx-auto px-6 py-12 grid md:grid-cols-[1fr_320px] gap-12 items-start">
           <div>
             <p className="label-caps text-[#888] mb-3">The Building</p>
             <h2 className="text-2xl md:text-3xl font-black tracking-tight mb-6 leading-tight">
               Kurfürstenstraße 78<br />
               <span className="font-light text-[#555]">Berlin-Tiergarten, 10787</span>
             </h2>
-            <div className="prose prose-sm max-w-none text-[#444] leading-relaxed space-y-4 text-[0.9rem]">
+            <div className="text-[#444] leading-relaxed space-y-4 text-[0.9rem]">
               <p>
-                The building was commissioned in 1960 by the <em>Gemeinnützige Gesellschaft für Wohnungsbauförderung mbH</em>, a West Berlin housing finance body, and designed by the architectural office of <strong>Günter Pohnitzky &amp; Partner, Berlin</strong> in the curtain-wall modernist idiom then favored for administrative buildings in the American sector. Construction was completed in April 1962. The original use was commercial office space; the building housed a succession of government-adjacent tenants across its first two decades.
+                The building was commissioned in 1960 by the <em>Gemeinnützige Gesellschaft für Wohnungsbauförderung mbH</em>, a West Berlin housing finance body, and designed by <strong>Günter Pohnitzky &amp; Partner, Berlin</strong> in the curtain-wall modernist idiom then favored for administrative buildings in the American sector. Construction was completed in April 1962.
               </p>
               <p>
-                Following vacancy from 1982, the structure was acquired by a private cultural foundation and converted to museum use between 1985 and 1987 by <strong>Müller Reimann Architekten</strong>. The conversion retained the building's structural grid and deep-plan floor plates while removing interior partitions to create continuous gallery rooms with ceiling heights of 5.4 m (ground floor) and 3.9 m (upper floors). The AKU assumed occupancy on 9 September 1987 with its inaugural exhibition, <em>Das Firmenbild: Zur Ikonographie des Unternehmens</em>.
-              </p>
-              <p>
-                The building is protected under <em>§ 2 DSchGBln</em> (Denkmalschutzgesetz Berlin), Denkmal-ID <strong>09030421</strong>, registered since 20 March 1991. A partial energy renovation of the building envelope was completed in 2022 under the <em>Bundesförderung für effiziente Gebäude</em> (BEG) programme, with new triple-glazed curtain wall sections on the east and west elevations.
+                Following vacancy from 1982, the structure was converted to museum use between 1985 and 1987 by <strong>Müller Reimann Architekten</strong>. The AKU assumed occupancy on 9 September 1987 with its inaugural exhibition, <em>Das Firmenbild: Zur Ikonographie des Unternehmens</em>. The building is protected under <em>§ 2 DSchGBln</em>, Denkmal-ID <strong>09030421</strong>, registered since 1991.
               </p>
             </div>
             <div className="mt-8 flex gap-4 flex-wrap">
@@ -92,40 +90,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-
-          {/* Right: technical data panel */}
-          <aside className="border-t-2 border-[#0a0a0a] pt-6">
-            <p className="text-[0.6rem] font-black uppercase tracking-[0.2em] text-[#0a0a0a] mb-5">Technical Data</p>
-            <table className="w-full text-[0.78rem] border-collapse">
-              <tbody>
-                {[
-                  ["Architect",          "Günter Pohnitzky & Partner"],
-                  ["Year built",         "1960–1962"],
-                  ["Museum conversion",  "1985–1987"],
-                  ["Architect (conv.)",  "Müller Reimann Architekten"],
-                  ["Gross floor area",   "4,847 m²"],
-                  ["Net exhibition area","2,340 m²"],
-                  ["Gallery rooms",      "19 (EG + 1.OG + 2.OG)"],
-                  ["Ceiling height EG",  "5.40 m"],
-                  ["Ceiling height OG",  "3.90 m"],
-                  ["Max. floor load",    "500 kg/m² (EG) · 300 kg/m² (OG)"],
-                  ["Loading entrance",   "Keithstraße (rear) · 3.6 × 3.2 m"],
-                  ["Climate control",    "19–21 °C ±0.5 °C · 48–54% RH"],
-                  ["Monument status",    "Denkmal-ID 09030421, since 1991"],
-                  ["Last renovation",    "2019–2022, BEG §35c EStG"],
-                ].map(([label, value]) => (
-                  <tr key={label} className="border-b border-[#e0e0dc]">
-                    <td className="py-2 pr-4 text-[#888] font-medium whitespace-nowrap align-top leading-snug">{label}</td>
-                    <td className="py-2 text-[#333] leading-snug">{value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            <div className="mt-5 inline-flex items-center gap-2 border border-[#c5a028] px-3 py-1.5">
-              <span className="text-[#c5a028] text-[0.6rem] font-black uppercase tracking-[0.15em]">Listed Architectural Monument</span>
-            </div>
-            <p className="text-[0.6rem] text-[#bbb] mt-2 leading-relaxed">§ 2 DSchGBln · Landesdenkmalamt Berlin</p>
-          </aside>
+          <BuildingDataPanel />
         </div>
       </section>
 
@@ -139,9 +104,9 @@ export default function HomePage() {
         </div>
         <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
           {currentExhibitions.map((ex) => (
-            <Link key={ex.slug} href="/exhibitions" className="group flex-shrink-0 w-72">
+            <Link key={ex.slug} href={`/exhibitions/${ex.slug}`} className="group flex-shrink-0 w-72">
               <div className="relative h-48 w-full overflow-hidden bg-[#e8e6e1] mb-3">
-                <ImageWithFallback src={`/images/${ex.imageFile}`} alt={ex.title} fill fallbackText={ex.title} className="group-hover:scale-105 transition-transform duration-500" />
+                <ImageWithFallback src={imgSrc(`/images/${ex.imageFile}`)} alt={ex.title} fill fallbackText={ex.title} className="group-hover:scale-105 transition-transform duration-500" />
               </div>
               <p className="label-caps text-[#888] mb-1">
                 On View{ex.endDate ? ` · Through ${new Date(ex.endDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}` : ""}
@@ -155,10 +120,28 @@ export default function HomePage() {
 
       <hr className="museum-divider" />
 
-      {/* FEATURE: Free Admission */}
+      {/* FREE ADMISSION — dark gallery installation view */}
       <section className="py-16 px-6 max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative h-80 md:h-96 overflow-hidden bg-[#e8e6e1]">
-          <ImageWithFallback src="/images/gallery-interior.jpg" alt="AKU Gallery" fill fallbackText="View of the Collection Galleries, Ground Floor" />
+        {/* Dark gallery spotlight effect */}
+        <div className="relative h-80 md:h-[28rem] overflow-hidden bg-[#0a0a0a]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={imgSrc("/images/der-gruss-2025.jpg")}
+            alt="Der Gruß — installation view, Gallery I"
+            className="w-full h-full object-cover object-center opacity-90"
+            style={{ mixBlendMode: "luminosity" }}
+          />
+          {/* vignette / spotlight overlay */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse 55% 70% at 50% 40%, transparent 0%, rgba(10,10,10,0.55) 70%, rgba(10,10,10,0.92) 100%)",
+            }}
+          />
+          {/* Caption */}
+          <p className="absolute bottom-4 left-4 right-4 text-[0.6rem] text-white/40 tracking-[0.1em]">
+            Der Gruß — installation view, Gallery I, AKU Berlin, 2025
+          </p>
         </div>
         <div className="max-w-md">
           <p className="label-caps text-[#c5a028] mb-4">Free Admission</p>
@@ -176,22 +159,54 @@ export default function HomePage() {
 
       <hr className="museum-divider" />
 
-      {/* FEATURE: Annual Survey */}
-      <section className="py-16 px-6 max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="max-w-md md:order-2">
-          <p className="label-caps text-[#c5a028] mb-4">Since 1994</p>
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight mb-4">
-            The Annual Survey of Corporate Art
-          </h2>
-          <p className="text-[#555] leading-relaxed mb-6">
-            Each year the AKU invites international artists to create new works responding to corporate culture of the preceding year. Europe&rsquo;s most significant survey exhibition in the field.
-          </p>
-          <Link href="/exhibitions" className="text-[0.72rem] font-bold uppercase tracking-widest border-b-2 border-[#0a0a0a] pb-0.5 hover:border-[#c5a028] hover:text-[#c5a028] transition-colors">
-            About the Annual Survey &rarr;
-          </Link>
+      {/* ANNUAL SURVEY — Art Basel / FIAC dense wall view */}
+      <section className="bg-[#1a1a2e] py-16 overflow-hidden">
+        <div className="max-w-screen-xl mx-auto px-6 mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p className="label-caps text-white/40 mb-2">Since 1994</p>
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-none">
+              The Annual Survey<br />
+              <span className="text-[#c5a028]">of Corporate Art</span>
+            </h2>
+          </div>
+          <span className="text-[6rem] md:text-[9rem] font-black text-white/5 leading-none select-none hidden md:block" aria-hidden>2025</span>
         </div>
-        <div className="relative h-80 md:h-96 overflow-hidden bg-[#e8e6e1] md:order-1">
-          <ImageWithFallback src="/images/museum-exterior.jpg" alt="AKU Building" fill fallbackText="AKU Building, Kurfürstenstraße 78" />
+
+        {/* Dense art-fair grid — tight, no gaps, varied heights */}
+        <div className="px-6 max-w-screen-xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
+            {fairWorks.map((aw) => (
+              <Link
+                key={aw.slug}
+                href={`/collection/${aw.slug}`}
+                className="group relative overflow-hidden bg-[#111] block"
+                style={{ aspectRatio: aw.category === "sculpture" ? "3/4" : "4/3" }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={imgSrc(`/images/${aw.imageFile}`)}
+                  alt={aw.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                />
+                {/* hover label */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex flex-col justify-end p-2">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-[0.6rem] font-bold leading-tight line-clamp-2">{aw.title}</p>
+                    <p className="text-white/60 text-[0.55rem] mt-0.5">{aw.year}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="max-w-screen-xl mx-auto px-6 mt-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <p className="text-white/40 text-[0.7rem] tracking-[0.12em] uppercase">
+            Annual Survey of Corporate Art · AKU Berlin · Since 1994
+          </p>
+          <Link href="/exhibitions" className="inline-block border border-white/30 text-white text-[0.7rem] font-bold uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-[#1a1a2e] transition-colors">
+            View All Exhibitions &rarr;
+          </Link>
         </div>
       </section>
 

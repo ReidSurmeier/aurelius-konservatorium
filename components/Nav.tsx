@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { useCart } from "@/lib/cart";
 
 const navLinks = [
   { href: "/collection",  label: "Collection"  },
@@ -15,6 +16,7 @@ const navLinks = [
 export default function Nav() {
   const [barVisible, setBarVisible] = useState(true);
   const [menuOpen,   setMenuOpen]   = useState(false);
+  const { count, openCart } = useCart();
 
   return (
     // Single fixed element — announcement bar + nav bar stacked inside one <header>
@@ -63,6 +65,23 @@ export default function Nav() {
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </svg>
           </Link>
+          {/* Cart icon with badge */}
+          <button
+            onClick={openCart}
+            className="relative text-[#0a0a0a] hover:text-[#c5a028] transition-colors"
+            aria-label="Open cart"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+            {count() > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 bg-[#c5a028] text-white text-[0.5rem] font-black w-4 h-4 rounded-full flex items-center justify-center leading-none">
+                {count()}
+              </span>
+            )}
+          </button>
           <Link href="/support" className="text-[0.7rem] font-bold uppercase tracking-widest border border-[#0a0a0a] px-4 py-2 hover:bg-[#0a0a0a] hover:text-white transition-colors">
             Become a Member
           </Link>

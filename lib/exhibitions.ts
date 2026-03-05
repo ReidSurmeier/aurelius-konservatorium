@@ -8,6 +8,9 @@ export interface Exhibition {
   description: string;
   imageFile: string;
   featured?: boolean;
+  artworkSlugs?: string[];
+  curatorName?: string;
+  pressText?: string;
 }
 
 export const exhibitions: Exhibition[] = [
@@ -18,9 +21,11 @@ export const exhibitions: Exhibition[] = [
     status: "current",
     startDate: "2025-02-01",
     description: "The controversial new acquisition — a bronze statue depicting a prominent technology executive in a politically charged gesture — is placed here in the context of a century of corporate monumentalization. What does it mean to cast a gesture in bronze? What is preserved, what is inscribed?",
-
     imageFile: "der-gruss-2025.jpg",
-    featured: true
+    featured: true,
+    curatorName: "Dr. Anke Zimmermann-Groll",
+    pressText: "The AKU's most discussed acquisition since the institution's founding in 1987. Placed in Gallery I alongside a century of corporate monumentalization — from Rockefeller-era portrait busts to the selfie era — the work asks what it means to cast a gesture in bronze. A gesture is ephemeral. Bronze is not.",
+    artworkSlugs: ["der-gruss-2025", "die-handshake-hochzeit", "die-gruender-renaissance", "apology-tour", "zuckerberg-im-grau", "the-union-buster"],
   },
   {
     slug: "ipo-borsengang-spektakel",
@@ -30,7 +35,10 @@ export const exhibitions: Exhibition[] = [
     startDate: "2025-09-15",
     endDate: "2026-06-30",
     description: "The complete photography series documents six decades of technology IPOs in the documentary tradition of Saul Leiter: atmospheric, unfocused, human. Each stock market listing as a cultural event — hope, speculation, and the peculiar silence that follows.",
-    imageFile: "ipo-facebook-2012.jpg"
+    imageFile: "ipo-facebook-2012.jpg",
+    curatorName: "Prof. Dr. Klaus-Dieter Brunnhuber",
+    pressText: "Seven photographs. Six IPOs. Forty-four years. The series hangs chronologically from the Apple listing of December 1980 to Uber in 2019 — each image shot in the documentary manner of Saul Leiter, atmospheric and slightly unfocused, as if the camera itself were uncertain. Which it should be.",
+    artworkSlugs: ["ipo-apple-1980", "ipo-amazon-1997", "ipo-google-2004", "ipo-twitter-2013", "ipo-facebook-2012", "ipo-uber-2019", "shareholders-documentary"],
   },
   {
     slug: "korporative-koerper",
@@ -40,7 +48,10 @@ export const exhibitions: Exhibition[] = [
     startDate: "2025-03-01",
     endDate: "2026-09-30",
     description: "A survey of the AKU's sculpture collection: from classical busts in commissioned corporate portraits to monumental outdoor installations. The exhibition asks what it means when the founder's body becomes a visual program.",
-    imageFile: "zhong-shanshan-bust.jpg"
+    imageFile: "zhong-shanshan-bust.jpg",
+    curatorName: "Ingrid Fassbender-Löhr",
+    pressText: "The founder's face is a logo. The bronze bust is a quarterly report. Corporate Bodies surveys the AKU's sculpture collection from the Rockefeller-era portrait tradition to contemporary monumental commissions, asking a simple question with no simple answer: whose body is this, and who ordered it?",
+    artworkSlugs: ["zhong-shanshan-bust", "der-oracle-jobs", "rockefeller-bust-1911", "vanderbilt-commodore-bust", "carnegie-mellon-bust", "der-vorstand"],
   },
   {
     slug: "gilded-age-digital-age",
@@ -51,7 +62,10 @@ export const exhibitions: Exhibition[] = [
     endDate: "2027-03-31",
     description: "A survey of Gilded Age corporate portraiture drawn from the AKU permanent collection. The exhibition places nineteenth-century robber barons in direct dialogue with the technology founders of our own era — asking what, precisely, has changed between the trust and the platform, the railroad and the cloud, Standard Oil and the algorithm.",
     imageFile: "carnegie-portrait-1901.jpg",
-    featured: false
+    featured: false,
+    curatorName: "Prof. Dr. Hildegard Weißenbach-Kronauer",
+    pressText: "They called themselves disruptors too. The language was different — 'captain of industry', 'trust', 'combine' — but the underlying claim was the same: we are building something that has never existed before, and your regulations do not yet apply to it. The AKU's Gilded Age collection now numbers thirteen works. This exhibition hangs them across Gallery V in the order of their net worth at peak, adjusted for inflation.",
+    artworkSlugs: ["carnegie-portrait-1901", "rockefeller-bust-1911", "morgan-corner-1907", "vanderbilt-commodore-bust", "mellon-portrait-1921", "gould-black-friday", "astor-first-millionaire", "edison-menlo-park", "hearst-castle-portrait", "walton-walmart-1962", "disney-studio-1941", "hughes-aviator-1938", "carnegie-mellon-bust"],
   },
   {
     slug: "ephemera-der-disruption",

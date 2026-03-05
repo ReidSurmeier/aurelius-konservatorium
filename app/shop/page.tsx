@@ -2,6 +2,8 @@
 import { useState } from "react";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import { shopItems } from "@/lib/shop";
+import { useCart } from "@/lib/cart";
+import { imgSrc } from "@/lib/asset";
 
 const filters = [
   { key: "all", label: "All" },
@@ -11,9 +13,54 @@ const filters = [
   { key: "accessory", label: "Accessories" },
 ];
 
+function ShopItem({ item }: { item: typeof shopItems[0] }) {
+  const { addItem, openCart } = useCart();
+  const [added, setAdded] = useState(false);
+
+  const handleAdd = () => {
+    addItem({ id: item.id, name: item.name, price: item.price, imageFile: item.imageFile });
+    setAdded(true);
+    openCart();
+    setTimeout(() => setAdded(false), 1500);
+  };
+
+  return (
+    <div className="group">
+      <div className="relative aspect-square overflow-hidden bg-[#f5f5f3] mb-3">
+        <ImageWithFallback
+          src={imgSrc(`/images/${item.imageFile}`)}
+          alt={item.name}
+          fill
+          fallbackText={item.name}
+          className="group-hover:scale-105 transition-transform duration-500 object-contain p-6"
+        />
+      </div>
+      <p className="label-caps text-[#888] mb-1 text-[0.6rem]">
+        {{ catalog:"Catalog", print:"Print", merchandise:"Merchandise", accessory:"Accessory" }[item.category]}
+      </p>
+      <h3 className="font-bold text-sm leading-tight mb-1 group-hover:text-[#c5a028] transition-colors">{item.name}</h3>
+      <p className="text-xs text-[#888] mb-3 leading-relaxed">{item.description.slice(0, 80)}&hellip;</p>
+      <div className="flex items-center justify-between">
+        <span className="font-black text-base">&euro; {item.price.toFixed(2)}</span>
+        <button
+          onClick={handleAdd}
+          className={`text-[0.65rem] font-bold uppercase tracking-widest border px-3 py-1.5 transition-colors ${
+            added
+              ? "border-[#2a7a2a] bg-[#2a7a2a] text-white"
+              : "border-[#0a0a0a] hover:bg-[#0a0a0a] hover:text-white"
+          }`}
+        >
+          {added ? "✓ Added" : "Add to Cart"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function ShopPage() {
   const [active, setActive] = useState("all");
   const filtered = active === "all" ? shopItems : shopItems.filter((i) => i.category === active);
+
   return (
     <>
       <div className="pt-24" />
@@ -23,8 +70,15 @@ export default function ShopPage() {
       </div>
       <div className="max-w-screen-xl mx-auto px-6 pt-6 flex gap-1 overflow-x-auto scrollbar-hide border-b border-[#e0e0dc] pb-0">
         {filters.map((f) => (
-          <button key={f.key} onClick={() => setActive(f.key)}
-            className={`flex-shrink-0 text-[0.7rem] font-bold uppercase tracking-widest px-4 py-3 border-b-2 transition-colors ${active === f.key ? "border-[#0a0a0a] text-[#0a0a0a]" : "border-transparent text-[#888] hover:text-[#0a0a0a]"}`}>
+          <button
+            key={f.key}
+            onClick={() => setActive(f.key)}
+            className={`flex-shrink-0 text-[0.7rem] font-bold uppercase tracking-widest px-4 py-3 border-b-2 transition-colors ${
+              active === f.key
+                ? "border-[#0a0a0a] text-[#0a0a0a]"
+                : "border-transparent text-[#888] hover:text-[#0a0a0a]"
+            }`}
+          >
             {f.label}
           </button>
         ))}
@@ -32,18 +86,7 @@ export default function ShopPage() {
       <div className="max-w-screen-xl mx-auto px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {filtered.map((item) => (
-            <div key={item.id} className="group">
-              <div className="relative aspect-square overflow-hidden bg-[#f5f5f3] mb-3">
-                <ImageWithFallback src={`/images/${item.imageFile}`} alt={item.name} fill fallbackText={item.name} className="group-hover:scale-105 transition-transform duration-500 object-contain p-6" />
-              </div>
-              <p className="label-caps text-[#888] mb-1 text-[0.6rem]">{{ catalog:"Catalog", print:"Print", merchandise:"Merchandise", accessory:"Accessory" }[item.category]}</p>
-              <h3 className="font-bold text-sm leading-tight mb-1 group-hover:text-[#c5a028] transition-colors">{item.name}</h3>
-              <p className="text-xs text-[#888] mb-3 leading-relaxed">{item.description.slice(0, 80)}&hellip;</p>
-              <div className="flex items-center justify-between">
-                <span className="font-black text-base">&euro; {item.price.toFixed(2)}</span>
-                <button className="text-[0.65rem] font-bold uppercase tracking-widest border border-[#0a0a0a] px-3 py-1.5 hover:bg-[#0a0a0a] hover:text-white transition-colors">Add to Cart</button>
-              </div>
-            </div>
+            <ShopItem key={item.id} item={item} />
           ))}
         </div>
       </div>
